@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Reserve_button = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.class_textBox = new System.Windows.Forms.TextBox();
@@ -47,29 +46,17 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.name_textBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.parrotWidgetPanel1 = new ReaLTaiizor.Controls.ParrotWidgetPanel();
-            this.foxNotification1 = new ReaLTaiizor.Controls.FoxNotification();
+            this.Reserve_button = new ReaLTaiizor.Controls.HopeButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.foxNotification1 = new ReaLTaiizor.Controls.FoxNotification();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.parrotWidgetPanel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // Reserve_button
-            // 
-            this.Reserve_button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Reserve_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Reserve_button.Location = new System.Drawing.Point(17, 25);
-            this.Reserve_button.Name = "Reserve_button";
-            this.Reserve_button.Size = new System.Drawing.Size(73, 41);
-            this.Reserve_button.TabIndex = 2;
-            this.Reserve_button.Text = "احتياط";
-            this.Reserve_button.UseVisualStyleBackColor = true;
-            this.Reserve_button.Click += new System.EventHandler(this.Reserve_button_Click);
             // 
             // groupBox4
             // 
@@ -93,8 +80,9 @@
             // 
             // class_textBox
             // 
+            this.class_textBox.CausesValidation = false;
             this.class_textBox.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.class_textBox.Location = new System.Drawing.Point(6, 46);
+            this.class_textBox.Location = new System.Drawing.Point(9, 46);
             this.class_textBox.Name = "class_textBox";
             this.class_textBox.ReadOnly = true;
             this.class_textBox.Size = new System.Drawing.Size(100, 27);
@@ -154,7 +142,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 16);
+            this.label3.Location = new System.Drawing.Point(54, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 0;
@@ -251,21 +239,38 @@
             this.label1.TabIndex = 0;
             this.label1.Text = ":الاسم";
             // 
-            // parrotWidgetPanel1
+            // Reserve_button
             // 
-            this.parrotWidgetPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.parrotWidgetPanel1.Controls.Add(this.groupBox5);
-            this.parrotWidgetPanel1.Controls.Add(this.Reserve_button);
-            this.parrotWidgetPanel1.Controls.Add(this.groupBox4);
-            this.parrotWidgetPanel1.Controls.Add(this.groupBox3);
-            this.parrotWidgetPanel1.Controls.Add(this.groupBox2);
-            this.parrotWidgetPanel1.Controls.Add(this.groupBox1);
-            this.parrotWidgetPanel1.ControlsAsWidgets = false;
-            this.parrotWidgetPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.parrotWidgetPanel1.Location = new System.Drawing.Point(0, 0);
-            this.parrotWidgetPanel1.Name = "parrotWidgetPanel1";
-            this.parrotWidgetPanel1.Size = new System.Drawing.Size(935, 91);
-            this.parrotWidgetPanel1.TabIndex = 4;
+            this.Reserve_button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Reserve_button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Info;
+            this.Reserve_button.CausesValidation = false;
+            this.Reserve_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Reserve_button.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Reserve_button.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Reserve_button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Reserve_button.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Reserve_button.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Reserve_button.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Reserve_button.Location = new System.Drawing.Point(0, 0);
+            this.Reserve_button.Name = "Reserve_button";
+            this.Reserve_button.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Reserve_button.Size = new System.Drawing.Size(114, 91);
+            this.Reserve_button.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Reserve_button.TabIndex = 13;
+            this.Reserve_button.Text = "احتياط";
+            this.Reserve_button.TextColor = System.Drawing.Color.White;
+            this.Reserve_button.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.Reserve_button.Click += new System.EventHandler(this.Reserve_button_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.foxNotification1);
+            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox5.Location = new System.Drawing.Point(114, 0);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(186, 91);
+            this.groupBox5.TabIndex = 11;
+            this.groupBox5.TabStop = false;
             // 
             // foxNotification1
             // 
@@ -296,22 +301,26 @@
             this.foxNotification1.YellowBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.foxNotification1.YellowTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(131)))), ((int)(((byte)(88)))));
             // 
-            // groupBox5
+            // panel1
             // 
-            this.groupBox5.Controls.Add(this.foxNotification1);
-            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox5.Location = new System.Drawing.Point(114, 0);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(186, 91);
-            this.groupBox5.TabIndex = 11;
-            this.groupBox5.TabStop = false;
+            this.panel1.Controls.Add(this.Reserve_button);
+            this.panel1.Controls.Add(this.groupBox5);
+            this.panel1.Controls.Add(this.groupBox4);
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(935, 91);
+            this.panel1.TabIndex = 14;
             // 
             // Teacher_Selection_data
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.parrotWidgetPanel1);
+            this.Controls.Add(this.panel1);
             this.Name = "Teacher_Selection_data";
             this.Size = new System.Drawing.Size(935, 91);
             this.groupBox4.ResumeLayout(false);
@@ -322,8 +331,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.parrotWidgetPanel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -338,18 +347,18 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox weekly_Number_of_classestext_Box;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button Reserve_button;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox daily_Reserve_times_textBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox daily_Number_of_classes_textBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private ReaLTaiizor.Controls.ParrotWidgetPanel parrotWidgetPanel1;
         private System.Windows.Forms.TextBox class_textBox;
         private System.Windows.Forms.TextBox name_textBox;
         private System.Windows.Forms.Label label4;
         private ReaLTaiizor.Controls.FoxNotification foxNotification1;
         private System.Windows.Forms.GroupBox groupBox5;
+        private ReaLTaiizor.Controls.HopeButton Reserve_button;
+        private System.Windows.Forms.Panel panel1;
     }
 }

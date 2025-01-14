@@ -109,11 +109,11 @@ namespace Teachers__Schedule_Management.User_Control
             // update UI
             if (isRemoved)
             {
-                this.Reserve_button.BackColor = SystemColors.Control;
+                this.Reserve_button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Info;
             }
             else
             {
-                this.Reserve_button.BackColor = System.Drawing.Color.Green;
+                this.Reserve_button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Success;
             }
         }
 
@@ -131,7 +131,7 @@ namespace Teachers__Schedule_Management.User_Control
                     var teacher = teachers.FirstOrDefault(t => t.TeacherName == this.Teacher_name);
                     if (teacher != null && teacher.Schedule.ContainsKey(buttonName) && teacher.Schedule[buttonName] == 1)
                     {
-                        this.Reserve_button.BackColor = System.Drawing.Color.Green;
+                        this.Reserve_button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Success;
                         this.class_textBox.Text = teacher.ClassDetails[buttonName];
                         this.class_textBox.ReadOnly = true;
                     }
@@ -143,6 +143,5 @@ namespace Teachers__Schedule_Management.User_Control
                 }
             }
         }
-
     }
 }
