@@ -36,8 +36,8 @@
             this.Edit_Delete_button = new System.Windows.Forms.Button();
             this.Add_schedule_button = new System.Windows.Forms.Button();
             this.button_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.Schedule_button = new System.Windows.Forms.Button();
-            this.Record_button = new System.Windows.Forms.Button();
+            this.Schedule_button = new ReaLTaiizor.Controls.HopeButton();
+            this.Record_button = new ReaLTaiizor.Controls.HopeButton();
             this.Main_panel.SuspendLayout();
             this.Sid_panel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -133,22 +133,44 @@
             // 
             // Schedule_button
             // 
+            this.Schedule_button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Schedule_button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.Schedule_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Schedule_button.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Schedule_button.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Schedule_button.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Schedule_button.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Schedule_button.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
             this.Schedule_button.Location = new System.Drawing.Point(3, 3);
             this.Schedule_button.Name = "Schedule_button";
-            this.Schedule_button.Size = new System.Drawing.Size(122, 33);
-            this.Schedule_button.TabIndex = 0;
+            this.Schedule_button.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Schedule_button.Size = new System.Drawing.Size(121, 40);
+            this.Schedule_button.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Schedule_button.TabIndex = 2;
             this.Schedule_button.Text = "الجدول";
-            this.Schedule_button.UseVisualStyleBackColor = true;
+            this.Schedule_button.TextColor = System.Drawing.Color.White;
+            this.Schedule_button.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             this.Schedule_button.Click += new System.EventHandler(this.Schedule_button_Click);
             // 
             // Record_button
             // 
-            this.Record_button.Location = new System.Drawing.Point(3, 42);
+            this.Record_button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Record_button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.Record_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Record_button.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Record_button.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            this.Record_button.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Record_button.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Record_button.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Record_button.Location = new System.Drawing.Point(3, 49);
             this.Record_button.Name = "Record_button";
-            this.Record_button.Size = new System.Drawing.Size(122, 33);
-            this.Record_button.TabIndex = 1;
+            this.Record_button.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            this.Record_button.Size = new System.Drawing.Size(121, 40);
+            this.Record_button.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Record_button.TabIndex = 2;
             this.Record_button.Text = "تقرير";
-            this.Record_button.UseVisualStyleBackColor = true;
+            this.Record_button.TextColor = System.Drawing.Color.White;
+            this.Record_button.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             this.Record_button.Click += new System.EventHandler(this.Record_button_Click);
             // 
             // Form1
@@ -173,12 +195,12 @@
         private System.Windows.Forms.Panel Page1_panel;
         private System.Windows.Forms.Panel Sid_panel;
         private System.Windows.Forms.FlowLayoutPanel button_flowLayoutPanel;
-        private System.Windows.Forms.Button Schedule_button;
-        private System.Windows.Forms.Button Record_button;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Edit_Delete_button;
         private System.Windows.Forms.Button Add_schedule_button;
         private System.Windows.Forms.Button Delete_record_button;
+        private ReaLTaiizor.Controls.HopeButton Schedule_button;
+        private ReaLTaiizor.Controls.HopeButton Record_button;
     }
 }
 

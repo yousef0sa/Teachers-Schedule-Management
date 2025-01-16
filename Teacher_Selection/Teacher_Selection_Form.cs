@@ -16,14 +16,19 @@ namespace Teachers__Schedule_Management.User_Control
             InitializeComponent();
         }
 
+        private void Teacher_Selection_Form_Load(object sender, EventArgs e)
+        {
+            LoadAvailableTeachers();
+        }
+
         private void LoadAvailableTeachers()
         {
             string jsonFilePath = "scheduleData.json";
-            string reserveJsonFilePath = "schedule_Reserve_Data.json"; // Path to the reserve JSON file
+            string reserveJsonFilePath = "schedule_Reserve_Data.json";
 
             if (!File.Exists(jsonFilePath))
             {
-                MessageBox.Show("No data.", "Missing file", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowErrorMessage("No data.", "Missing file");
                 return;
             }
 
@@ -32,94 +37,108 @@ namespace Teachers__Schedule_Management.User_Control
 
             if (string.IsNullOrWhiteSpace(jsonData))
             {
-                MessageBox.Show("No data.", "Empty", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowErrorMessage("No data.", "Empty");
                 return;
             }
 
-            List<TeacherData> teachers = JsonConvert.DeserializeObject<List<TeacherData>>(jsonData);
+            List<TeacherData> teachers = DeserializeJsonData<List<TeacherData>>(jsonData);
             List<TeacherData> reserveTeachers = !string.IsNullOrWhiteSpace(reserveJsonData)
-                ? JsonConvert.DeserializeObject<List<TeacherData>>(reserveJsonData)
+                ? DeserializeJsonData<List<TeacherData>>(reserveJsonData)
                 : new List<TeacherData>();
 
             if (teachers == null)
             {
-                MessageBox.Show("Failed to deserialize the main JSON file.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowErrorMessage("Failed to deserialize the main JSON file.", "Error");
                 return;
             }
 
-            var availableTeachers = teachers.Where(t => t.Schedule.ContainsKey(ButtonName) && t.Schedule[ButtonName] == 0).ToList();
+            var availableTeachers = GetAvailableTeachers(teachers);
+            var teacherDataList = CreateTeacherDataList(availableTeachers, reserveTeachers);
 
+            AddTeacherDataToPanel(teacherDataList);
+        }
+
+        private void ShowErrorMessage(string message, string caption)
+        {
+            MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private T DeserializeJsonData<T>(string jsonData)
+        {
+            return JsonConvert.DeserializeObject<T>(jsonData);
+        }
+
+        private List<TeacherData> GetAvailableTeachers(List<TeacherData> teachers)
+        {
+            return teachers.Where(t => t.Schedule.ContainsKey(ButtonName) && t.Schedule[ButtonName] == 0).ToList();
+        }
+
+        private List<Teacher_Selection_data> CreateTeacherDataList(List<TeacherData> availableTeachers, List<TeacherData> reserveTeachers)
+        {
             var teacherDataList = new List<Teacher_Selection_data>();
 
             foreach (var teacher in availableTeachers)
             {
-                int weeklyReserveTimes = reserveTeachers
-                    .Where(rt => rt.TeacherName == teacher.TeacherName)
-                    .Sum(rt => rt.Schedule.Count);
-
-                int dailyReserveTimes = reserveTeachers
-                    .Where(rt => rt.TeacherName == teacher.TeacherName && rt.Schedule.ContainsKey(ButtonName))
-                    .Sum(rt => rt.Schedule[ButtonName]);
-
-                int weeklyNumberOfClasses = teacher.Schedule.Count(s => s.Value == 1);
-                int dailyNumberOfClasses = teacher.Schedule.ContainsKey(ButtonName) && teacher.Schedule[ButtonName] == 1 ? 1 : 0;
-
-                // Calculate daily classes and daily reserves
-                string dayPrefix = ButtonName.Split('_')[0];
-                int dailyClasses = teacher.Schedule
-                    .Where(s => s.Key.StartsWith(dayPrefix) && s.Value == 1)
-                    .Count();
-
-                int dailyReserves = reserveTeachers
-                    .Where(rt => rt.TeacherName == teacher.TeacherName)
-                    .Sum(rt => rt.Schedule.Count(s => s.Key.StartsWith(dayPrefix) && s.Value == 1));
+                int weeklyReserveTimes = CalculateWeeklyReserveTimes(reserveTeachers, teacher.TeacherName);
+                int dailyReserveTimes = CalculateDailyReserveTimes(reserveTeachers, teacher.TeacherName);
+                int weeklyNumberOfClasses = CalculateWeeklyNumberOfClasses(teacher);
+                int dailyNumberOfClasses = CalculateDailyNumberOfClasses(teacher);
 
                 Teacher_Selection_data teacherData = new Teacher_Selection_data
                 {
                     Teacher_name = teacher.TeacherName,
                     Weekly_Reserve_times = weeklyReserveTimes.ToString(),
-                    Daily_Reserve_times = dailyReserves.ToString(),
+                    Daily_Reserve_times = dailyReserveTimes.ToString(),
                     Weekly_Number_of_classes = weeklyNumberOfClasses.ToString(),
-                    Daily_Number_of_classes = dailyClasses.ToString(),
+                    Daily_Number_of_classes = dailyNumberOfClasses.ToString(),
                 };
 
-                teacherData.UpdateButtonColor(ButtonName); // Call the method to update the button color
-
-                // Update the teacher status notification
+                teacherData.UpdateButtonColor(ButtonName);
                 Update_Teacher_Status(teacherData);
 
-
-                // Add the teacher data to the list
                 teacherDataList.Add(teacherData);
             }
 
-            // Sort teachers by total points so that teachers with the lowest total are loaded first
-            var sortedTeacherDataList = teacherDataList
-                .OrderBy(td => int.Parse(td.Weekly_Number_of_classes) + int.Parse(td.Weekly_Reserve_times))
-                .ToList();
+            return teacherDataList.OrderBy(td => int.Parse(td.Weekly_Number_of_classes) + int.Parse(td.Weekly_Reserve_times)).ToList();
+        }
 
+        private int CalculateWeeklyReserveTimes(List<TeacherData> reserveTeachers, string teacherName)
+        {
+            return reserveTeachers.Where(rt => rt.TeacherName == teacherName).Sum(rt => rt.Schedule.Count);
+        }
 
-            // Add the teacher data to the panel
-            foreach (var teacherData in sortedTeacherDataList)
+        private int CalculateDailyReserveTimes(List<TeacherData> reserveTeachers, string teacherName)
+        {
+            return reserveTeachers.Where(rt => rt.TeacherName == teacherName && rt.Schedule.ContainsKey(ButtonName)).Sum(rt => rt.Schedule[ButtonName]);
+        }
+
+        private int CalculateWeeklyNumberOfClasses(TeacherData teacher)
+        {
+            return teacher.Schedule.Count(s => s.Value == 1);
+        }
+
+        private int CalculateDailyNumberOfClasses(TeacherData teacher)
+        {
+            string dayPrefix = ButtonName.Split('_')[0];
+            return teacher.Schedule.Where(s => s.Key.StartsWith(dayPrefix) && s.Value == 1).Count();
+        }
+
+        private void AddTeacherDataToPanel(List<Teacher_Selection_data> teacherDataList)
+        {
+            foreach (var teacherData in teacherDataList)
             {
                 teacherData.Dock = DockStyle.Top;
                 Main_panel1.Controls.Add(teacherData);
             }
         }
 
-        private void Teacher_Selection_Form_Load(object sender, EventArgs e)
-        {
-            LoadAvailableTeachers();
-        }
-
         private void Update_Teacher_Status(Teacher_Selection_data teacherData)
         {
-            // Update the teacher status notification
             int totalPoints = int.Parse(teacherData.Weekly_Number_of_classes) + int.Parse(teacherData.Weekly_Reserve_times);
             if (totalPoints >= 24)
             {
                 teacherData.Teacher_Status_Notification_Text = "الحالة: مضغوط";
-                teacherData.Teacher_Status_Notification_Style= ReaLTaiizor.Controls.FoxNotification.Styles.Red;
+                teacherData.Teacher_Status_Notification_Style = ReaLTaiizor.Controls.FoxNotification.Styles.Red;
             }
             else
             {

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using ReaLTaiizor.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,7 +63,7 @@ namespace Teachers__Schedule_Management.NewFolder1
         {
             foreach (Control control in parent.Controls)
             {
-                if (control is Button)
+                if (control is HopeButton)
                 {
                     control.Click += OpenTeacherSelectionForm;
                 }
@@ -75,7 +76,7 @@ namespace Teachers__Schedule_Management.NewFolder1
 
         private void OpenTeacherSelectionForm(object sender, EventArgs e)
         {
-            Button clickedButton = sender as Button;
+            HopeButton clickedButton = sender as HopeButton;
             if (clickedButton != null)
             {
                 Teacher_Selection_Form form = new Teacher_Selection_Form
@@ -107,21 +108,21 @@ namespace Teachers__Schedule_Management.NewFolder1
         {
             foreach (Control control in parent.Controls)
             {
-                if (control is Button button)
+                if (control is HopeButton button)
                 {
                     bool isReserved = false;
                     foreach (var teacher in teachers)
                     {
                         if (teacher.Schedule.ContainsKey(button.Name) && teacher.Schedule[button.Name] == 1)
                         {
-                            button.BackColor = Color.Green;
+                            button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Success;
                             isReserved = true;
                             break;
                         }
                     }
                     if (!isReserved)
                     {
-                        button.BackColor = SystemColors.ControlLightLight;
+                        button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
                     }
                 }
                 else if (control.HasChildren)
