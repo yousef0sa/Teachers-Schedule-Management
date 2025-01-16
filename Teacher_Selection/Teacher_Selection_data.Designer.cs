@@ -48,7 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Reserve_button = new ReaLTaiizor.Controls.HopeButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.foxNotification1 = new ReaLTaiizor.Controls.FoxNotification();
+            this.Teacher_Status_Notification = new ReaLTaiizor.Controls.FoxNotification();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -84,7 +84,6 @@
             this.class_textBox.Font = new System.Drawing.Font("Tahoma", 12F);
             this.class_textBox.Location = new System.Drawing.Point(9, 46);
             this.class_textBox.Name = "class_textBox";
-            this.class_textBox.ReadOnly = true;
             this.class_textBox.Size = new System.Drawing.Size(100, 27);
             this.class_textBox.TabIndex = 8;
             this.class_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -264,7 +263,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.foxNotification1);
+            this.groupBox5.Controls.Add(this.Teacher_Status_Notification);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox5.Location = new System.Drawing.Point(114, 0);
             this.groupBox5.Name = "groupBox5";
@@ -272,34 +271,31 @@
             this.groupBox5.TabIndex = 11;
             this.groupBox5.TabStop = false;
             // 
-            // foxNotification1
+            // Teacher_Status_Notification
             // 
-            this.foxNotification1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.foxNotification1.BackColor = System.Drawing.Color.Transparent;
-            this.foxNotification1.BlueBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(248)))));
-            this.foxNotification1.BlueBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(217)))), ((int)(((byte)(240)))));
-            this.foxNotification1.BlueTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(143)))), ((int)(((byte)(184)))));
-            this.foxNotification1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.foxNotification1.EnabledCalc = true;
-            this.foxNotification1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.foxNotification1.GreenBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(214)))));
-            this.foxNotification1.GreenBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(229)))), ((int)(((byte)(182)))));
-            this.foxNotification1.GreenTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(140)))), ((int)(((byte)(69)))));
-            this.foxNotification1.Location = new System.Drawing.Point(28, 25);
-            this.foxNotification1.Name = "foxNotification1";
-            this.foxNotification1.RedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.foxNotification1.RedBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(204)))), ((int)(((byte)(209)))));
-            this.foxNotification1.RedTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(99)))), ((int)(((byte)(94)))));
-            this.foxNotification1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.foxNotification1.Size = new System.Drawing.Size(130, 40);
-            this.foxNotification1.Style = ReaLTaiizor.Controls.FoxNotification.Styles.Green;
-            this.foxNotification1.TabIndex = 10;
-            this.foxNotification1.Text = "الحالة: ممتازة";
-            this.foxNotification1.YellowBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(248)))), ((int)(((byte)(225)))));
-            this.foxNotification1.YellowBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
-            this.foxNotification1.YellowTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(131)))), ((int)(((byte)(88)))));
+            this.Teacher_Status_Notification.BackColor = System.Drawing.Color.Transparent;
+            this.Teacher_Status_Notification.BlueBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(248)))));
+            this.Teacher_Status_Notification.BlueBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(217)))), ((int)(((byte)(240)))));
+            this.Teacher_Status_Notification.BlueTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(143)))), ((int)(((byte)(184)))));
+            this.Teacher_Status_Notification.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Teacher_Status_Notification.EnabledCalc = true;
+            this.Teacher_Status_Notification.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Teacher_Status_Notification.GreenBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(214)))));
+            this.Teacher_Status_Notification.GreenBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(229)))), ((int)(((byte)(182)))));
+            this.Teacher_Status_Notification.GreenTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(140)))), ((int)(((byte)(69)))));
+            this.Teacher_Status_Notification.Location = new System.Drawing.Point(26, 28);
+            this.Teacher_Status_Notification.Name = "Teacher_Status_Notification";
+            this.Teacher_Status_Notification.RedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.Teacher_Status_Notification.RedBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(204)))), ((int)(((byte)(209)))));
+            this.Teacher_Status_Notification.RedTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(99)))), ((int)(((byte)(94)))));
+            this.Teacher_Status_Notification.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Teacher_Status_Notification.Size = new System.Drawing.Size(130, 40);
+            this.Teacher_Status_Notification.Style = ReaLTaiizor.Controls.FoxNotification.Styles.Green;
+            this.Teacher_Status_Notification.TabIndex = 10;
+            this.Teacher_Status_Notification.Text = "الحالة: ممتازة";
+            this.Teacher_Status_Notification.YellowBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(248)))), ((int)(((byte)(225)))));
+            this.Teacher_Status_Notification.YellowBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
+            this.Teacher_Status_Notification.YellowTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(131)))), ((int)(((byte)(88)))));
             // 
             // panel1
             // 
@@ -356,9 +352,9 @@
         private System.Windows.Forms.TextBox class_textBox;
         private System.Windows.Forms.TextBox name_textBox;
         private System.Windows.Forms.Label label4;
-        private ReaLTaiizor.Controls.FoxNotification foxNotification1;
         private System.Windows.Forms.GroupBox groupBox5;
         private ReaLTaiizor.Controls.HopeButton Reserve_button;
         private System.Windows.Forms.Panel panel1;
+        private ReaLTaiizor.Controls.FoxNotification Teacher_Status_Notification;
     }
 }

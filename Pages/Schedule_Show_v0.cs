@@ -23,12 +23,11 @@ namespace Teachers__Schedule_Management.NewFolder1
             InitializeDayLabels();
             UpdateLabelColors();
             this.Dock = DockStyle.Fill;
-            AddButtonClickEvents(); // Add this line to initialize button click events
+            AddButtonClickEvents();
         }
 
         private void InitializeDayLabels()
         {
-            // استخدم الـ Labels الموجودة بالفعل
             dayLabels = new Label[5];
             dayLabels[0] = Sunday_label;
             dayLabels[1] = Monday_label;
@@ -40,19 +39,18 @@ namespace Teachers__Schedule_Management.NewFolder1
         private void UpdateLabelColors()
         {
             DayOfWeek today = DateTime.Now.DayOfWeek;
-            Console.Write(today);
             foreach (Label label in dayLabels)
             {
                 if (label.Text == today.ToString())
                 {
-                    label.BackColor = Color.BurlyWood; // لون الخلفية لليوم الحالي
+                    label.BackColor = Color.BurlyWood;
                 }
                 else
                 {
-                    label.BackColor = Color.Transparent; // لون الخلفية للأيام الأخرى
+                    label.BackColor = Color.Transparent;
                 }
             }
-            UpdateButtonColors(); // تحديث ألوان الأزرار
+            UpdateButtonColors();
         }
 
         private void AddButtonClickEvents()
@@ -85,12 +83,13 @@ namespace Teachers__Schedule_Management.NewFolder1
                     ButtonName = clickedButton.Name
                 };
                 form.ShowDialog();
-                UpdateButtonColors(); // تحديث الألوان بعد إغلاق النموذج
+                UpdateButtonColors();
             }
         }
+
         private void UpdateButtonColors()
         {
-            string jsonFilePath = "schedule_Reserve_Data.json"; // ضع مسار ملف JSON هنا
+            string jsonFilePath = "schedule_Reserve_Data.json";
 
             if (File.Exists(jsonFilePath))
             {
@@ -103,6 +102,7 @@ namespace Teachers__Schedule_Management.NewFolder1
                 }
             }
         }
+
         private void UpdateButtonColorsRecursive(Control parent, List<TeacherData> teachers)
         {
             foreach (Control control in parent.Controls)
@@ -114,14 +114,14 @@ namespace Teachers__Schedule_Management.NewFolder1
                     {
                         if (teacher.Schedule.ContainsKey(button.Name) && teacher.Schedule[button.Name] == 1)
                         {
-                            button.BackColor = Color.Green; // لون مميز للزر المحجوز
+                            button.BackColor = Color.Green;
                             isReserved = true;
                             break;
                         }
                     }
                     if (!isReserved)
                     {
-                        button.BackColor = SystemColors.ControlLightLight; // لون افتراضي للزر
+                        button.BackColor = SystemColors.ControlLightLight;
                     }
                 }
                 else if (control.HasChildren)

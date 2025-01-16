@@ -85,14 +85,21 @@ namespace Teachers__Schedule_Management.User_Control
 
                 teacherData.UpdateButtonColor(ButtonName); // Call the method to update the button color
 
+                // Update the teacher status notification
+                Update_Teacher_Status(teacherData);
+
+
+                // Add the teacher data to the list
                 teacherDataList.Add(teacherData);
             }
 
-            // Sort teachers by total points so that teachers with the highest total are loaded first
+            // Sort teachers by total points so that teachers with the lowest total are loaded first
             var sortedTeacherDataList = teacherDataList
-                .OrderByDescending(td => int.Parse(td.Daily_Number_of_classes) + int.Parse(td.Weekly_Reserve_times))
+                .OrderBy(td => int.Parse(td.Weekly_Number_of_classes) + int.Parse(td.Weekly_Reserve_times))
                 .ToList();
 
+
+            // Add the teacher data to the panel
             foreach (var teacherData in sortedTeacherDataList)
             {
                 teacherData.Dock = DockStyle.Top;
@@ -103,6 +110,22 @@ namespace Teachers__Schedule_Management.User_Control
         private void Teacher_Selection_Form_Load(object sender, EventArgs e)
         {
             LoadAvailableTeachers();
+        }
+
+        private void Update_Teacher_Status(Teacher_Selection_data teacherData)
+        {
+            // Update the teacher status notification
+            int totalPoints = int.Parse(teacherData.Weekly_Number_of_classes) + int.Parse(teacherData.Weekly_Reserve_times);
+            if (totalPoints >= 24)
+            {
+                teacherData.Teacher_Status_Notification_Text = "الحالة: مضغوط";
+                teacherData.Teacher_Status_Notification_Style= ReaLTaiizor.Controls.FoxNotification.Styles.Red;
+            }
+            else
+            {
+                teacherData.Teacher_Status_Notification_Text = "الحالة: ممتاز";
+                teacherData.Teacher_Status_Notification_Style = ReaLTaiizor.Controls.FoxNotification.Styles.Green;
+            }
         }
     }
 

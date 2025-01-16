@@ -39,15 +39,17 @@
             this.Main_panel1.Location = new System.Drawing.Point(0, 0);
             this.Main_panel1.MinimumSize = new System.Drawing.Size(261, 61);
             this.Main_panel1.Name = "Main_panel1";
-            this.Main_panel1.Size = new System.Drawing.Size(952, 443);
+            this.Main_panel1.Size = new System.Drawing.Size(952, 608);
             this.Main_panel1.TabIndex = 0;
             // 
             // Teacher_Selection_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 443);
+            this.ClientSize = new System.Drawing.Size(952, 608);
             this.Controls.Add(this.Main_panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(126, 50);
             this.Name = "Teacher_Selection_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
