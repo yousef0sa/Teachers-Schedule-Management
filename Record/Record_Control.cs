@@ -30,11 +30,20 @@ namespace Teachers__Schedule_Management.User_Control
         public string Where_Class
         {
             get { return this.Where_class_textBox.Text; }
-            set { this.Where_class_textBox.Text = value; }
+            set
+            {
+                this.Where_class_textBox.Text = value;
+                this.Where_class_textBox.RightToLeft = IsArabic(value) ? RightToLeft.Yes : RightToLeft.No;
+            }
         }
         public _Record_Control()
         {
             InitializeComponent();
+        }
+
+        private bool IsArabic(string text)
+        {
+            return text.Any(c => c >= 0x0600 && c <= 0x06FF);
         }
     }
 }

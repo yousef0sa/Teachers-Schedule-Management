@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using Teachers__Schedule_Management.Forms;
 using Teachers__Schedule_Management.NewFolder1;
 using Teachers__Schedule_Management.User_Control;
+using Teachers__Schedule_Management.Home;
 
 namespace Teachers__Schedule_Management
 {
@@ -19,7 +20,6 @@ namespace Teachers__Schedule_Management
             Page1_panel.Controls.Clear();
             Schedule_Show_v0 schedule = new Schedule_Show_v0();
             Page1_panel.Controls.Add(schedule);
-
         }
 
         private void Add_schedule_button_Click(object sender, EventArgs e)
@@ -27,7 +27,6 @@ namespace Teachers__Schedule_Management
             Page1_panel.Controls.Clear();
             Schedule_Add_v0 schedule = new Schedule_Add_v0();
             Page1_panel.Controls.Add(schedule);
-
         }
 
         private void Edit_Delete_button_Click(object sender, EventArgs e)
@@ -59,6 +58,13 @@ namespace Teachers__Schedule_Management
                 MessageBox.Show("No data to delete.", "No Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+        }
+
+        private void Home_Button_Click(object sender, EventArgs e)
+        {
+            Page1_panel.Controls.Clear();
+            Home_Page home_page = new Home_Page();
+            Page1_panel.Controls.Add(home_page);
         }
     }
 }

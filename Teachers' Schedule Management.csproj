@@ -92,6 +92,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\TeacherDataLoader.cs" />
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +100,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\TeacherData.cs" />
+    <Compile Include="Home\Home_Page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home\Home_Page.Designer.cs">
+      <DependentUpon>Home_Page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Record\Record_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +152,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\Home_Page.resx">
+      <DependentUpon>Home_Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Record\Record_Form.resx">
       <DependentUpon>Record_Form.cs</DependentUpon>

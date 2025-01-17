@@ -1,16 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
-
+using System.Linq;
+using System.Windows.Forms;
 using Teachers__Schedule_Management.User_Control;
-using Newtonsoft.Json;
 
 namespace Teachers__Schedule_Management.Forms
 {
@@ -44,13 +39,24 @@ namespace Teachers__Schedule_Management.Forms
             }
 
             var dayOrder = new Dictionary<string, int>
-            {
-                { "Sunday", 0 },
-                { "Monday", 1 },
-                { "Tuesday", 2 },
-                { "Wednesday", 3 },
-                { "Thursday", 4 },
-            };
+                    {
+                        { "Sunday", 0 },
+                        { "Monday", 1 },
+                        { "Tuesday", 2 },
+                        { "Wednesday", 3 },
+                        { "Thursday", 4 },
+                    };
+
+            var classOrder = new Dictionary<string, int>
+                    {
+                        { "First", 0 },
+                        { "Second", 1 },
+                        { "Third", 2 },
+                        { "Fourth", 3 },
+                        { "Fifth", 4 },
+                        { "Sixth", 5 },
+                        { "Seventh", 6 },
+                    };
 
             var sortedSchedules = teachers.SelectMany(teacher => teacher.Schedule.Select(schedule => new
             {
@@ -60,7 +66,7 @@ namespace Teachers__Schedule_Management.Forms
                 WhereClass = teacher.ClassDetails[schedule.Key]
             }))
             .OrderBy(record => dayOrder.ContainsKey(record.Day) ? dayOrder[record.Day] : int.MaxValue)
-            .ThenBy(record => record.WhenClass)
+            .ThenBy(record => classOrder.ContainsKey(record.WhenClass) ? classOrder[record.WhenClass] : int.MaxValue)
             .ToList();
 
             foreach (var record in sortedSchedules)
