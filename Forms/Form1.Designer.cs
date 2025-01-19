@@ -137,9 +137,10 @@
             // 
             this.Home_Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
             this.Home_Button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.Home_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Home_Button.Cursor = System.Windows.Forms.Cursors.No;
             this.Home_Button.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
             this.Home_Button.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            this.Home_Button.Enabled = false;
             this.Home_Button.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Home_Button.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Home_Button.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));

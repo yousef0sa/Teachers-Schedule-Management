@@ -16,7 +16,7 @@ namespace Teachers__Schedule_Management
 
         private void Schedule_button_Click(object sender, EventArgs e)
         {
-            // lod the Schedule to Page1_panel
+            // Load the Schedule to Page1_panel
             Page1_panel.Controls.Clear();
             Schedule_Show_v0 schedule = new Schedule_Show_v0();
             Page1_panel.Controls.Add(schedule);
@@ -57,7 +57,6 @@ namespace Teachers__Schedule_Management
             {
                 MessageBox.Show("No data to delete.", "No Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
         }
 
         private void Home_Button_Click(object sender, EventArgs e)
