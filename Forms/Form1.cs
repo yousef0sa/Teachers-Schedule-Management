@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Teachers__Schedule_Management.Class;
 using Teachers__Schedule_Management.Forms;
 using Teachers__Schedule_Management.Home;
 using Teachers__Schedule_Management.NewFolder1;
@@ -9,9 +10,13 @@ namespace Teachers__Schedule_Management
 {
     public partial class Form1 : Form
     {
+        private Update _updateManager = new Update();
+
         public Form1()
         {
             InitializeComponent();
+            _updateManager.CheckForUpdates();
+            _updateManager.UpdateProgramVersionLabel(Program_Version_Label);
         }
 
         private void Schedule_button_Click(object sender, EventArgs e)

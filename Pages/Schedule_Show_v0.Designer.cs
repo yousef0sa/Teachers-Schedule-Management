@@ -36,6 +36,8 @@
             this.Sunday_Third = new ReaLTaiizor.Controls.HopeButton();
             this.Sunday_Fourth = new ReaLTaiizor.Controls.HopeButton();
             this.Sunday_Fifth = new ReaLTaiizor.Controls.HopeButton();
+            this.Sunday_Sixth = new ReaLTaiizor.Controls.HopeButton();
+            this.Sunday_Seventh = new ReaLTaiizor.Controls.HopeButton();
             this.Monday = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.Monday_label = new System.Windows.Forms.Label();
@@ -43,6 +45,9 @@
             this.Monday_Second = new ReaLTaiizor.Controls.HopeButton();
             this.Monday_Third = new ReaLTaiizor.Controls.HopeButton();
             this.Monday_Fourth = new ReaLTaiizor.Controls.HopeButton();
+            this.Monday_Fifth = new ReaLTaiizor.Controls.HopeButton();
+            this.Monday_Sixth = new ReaLTaiizor.Controls.HopeButton();
+            this.Monday_Seventh = new ReaLTaiizor.Controls.HopeButton();
             this.Tuesday = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.Tuesday_label = new System.Windows.Forms.Label();
@@ -50,6 +55,9 @@
             this.Tuesday_Second = new ReaLTaiizor.Controls.HopeButton();
             this.Tuesday_Third = new ReaLTaiizor.Controls.HopeButton();
             this.Tuesday_Fourth = new ReaLTaiizor.Controls.HopeButton();
+            this.Tuesday_Fifth = new ReaLTaiizor.Controls.HopeButton();
+            this.Tuesday_Sixth = new ReaLTaiizor.Controls.HopeButton();
+            this.Tuesday_Seventh = new ReaLTaiizor.Controls.HopeButton();
             this.Wednesday = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.Wednesday_label = new System.Windows.Forms.Label();
@@ -57,6 +65,9 @@
             this.Wednesday_Second = new ReaLTaiizor.Controls.HopeButton();
             this.Wednesday_Third = new ReaLTaiizor.Controls.HopeButton();
             this.Wednesday_Fourth = new ReaLTaiizor.Controls.HopeButton();
+            this.Wednesday_Fifth = new ReaLTaiizor.Controls.HopeButton();
+            this.Wednesday_Sixth = new ReaLTaiizor.Controls.HopeButton();
+            this.Wednesday_Seventh = new ReaLTaiizor.Controls.HopeButton();
             this.Thursday = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.Thursday_label = new System.Windows.Forms.Label();
@@ -64,21 +75,10 @@
             this.Thursday_Second = new ReaLTaiizor.Controls.HopeButton();
             this.Thursday_Third = new ReaLTaiizor.Controls.HopeButton();
             this.Thursday_Fourth = new ReaLTaiizor.Controls.HopeButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Monday_Fifth = new ReaLTaiizor.Controls.HopeButton();
-            this.Tuesday_Fifth = new ReaLTaiizor.Controls.HopeButton();
-            this.Wednesday_Fifth = new ReaLTaiizor.Controls.HopeButton();
             this.Thursday_Fifth = new ReaLTaiizor.Controls.HopeButton();
-            this.Sunday_Sixth = new ReaLTaiizor.Controls.HopeButton();
-            this.Monday_Sixth = new ReaLTaiizor.Controls.HopeButton();
-            this.Tuesday_Sixth = new ReaLTaiizor.Controls.HopeButton();
-            this.Wednesday_Sixth = new ReaLTaiizor.Controls.HopeButton();
             this.Thursday_Sixth = new ReaLTaiizor.Controls.HopeButton();
-            this.Sunday_Seventh = new ReaLTaiizor.Controls.HopeButton();
-            this.Monday_Seventh = new ReaLTaiizor.Controls.HopeButton();
-            this.Tuesday_Seventh = new ReaLTaiizor.Controls.HopeButton();
-            this.Wednesday_Seventh = new ReaLTaiizor.Controls.HopeButton();
             this.Thursday_Seventh = new ReaLTaiizor.Controls.HopeButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Sunday.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.Monday.SuspendLayout();
@@ -124,9 +124,11 @@
             // 
             this.Sunday_label.BackColor = System.Drawing.SystemColors.Control;
             this.Sunday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Sunday_label.Location = new System.Drawing.Point(618, 0);
+            this.Sunday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
+            this.Sunday_label.Location = new System.Drawing.Point(618, 3);
+            this.Sunday_label.Margin = new System.Windows.Forms.Padding(3);
             this.Sunday_label.Name = "Sunday_label";
-            this.Sunday_label.Size = new System.Drawing.Size(66, 66);
+            this.Sunday_label.Size = new System.Drawing.Size(66, 60);
             this.Sunday_label.TabIndex = 0;
             this.Sunday_label.Text = "Sunday";
             this.Sunday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -231,6 +233,46 @@
             this.Sunday_Fifth.TextColor = System.Drawing.Color.Black;
             this.Sunday_Fifth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             // 
+            // Sunday_Sixth
+            // 
+            this.Sunday_Sixth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Sunday_Sixth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
+            this.Sunday_Sixth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Sunday_Sixth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Sunday_Sixth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Sunday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Sunday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Sunday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Sunday_Sixth.Location = new System.Drawing.Point(96, 3);
+            this.Sunday_Sixth.Name = "Sunday_Sixth";
+            this.Sunday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Sunday_Sixth.Size = new System.Drawing.Size(81, 60);
+            this.Sunday_Sixth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Sunday_Sixth.TabIndex = 8;
+            this.Sunday_Sixth.Text = "6 Sixth";
+            this.Sunday_Sixth.TextColor = System.Drawing.Color.Black;
+            this.Sunday_Sixth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
+            // Sunday_Seventh
+            // 
+            this.Sunday_Seventh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Sunday_Seventh.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
+            this.Sunday_Seventh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Sunday_Seventh.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Sunday_Seventh.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Sunday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Sunday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Sunday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Sunday_Seventh.Location = new System.Drawing.Point(9, 3);
+            this.Sunday_Seventh.Name = "Sunday_Seventh";
+            this.Sunday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Sunday_Seventh.Size = new System.Drawing.Size(81, 60);
+            this.Sunday_Seventh.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Sunday_Seventh.TabIndex = 8;
+            this.Sunday_Seventh.Text = "7 Seventh";
+            this.Sunday_Seventh.TextColor = System.Drawing.Color.Black;
+            this.Sunday_Seventh.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
             // Monday
             // 
             this.Monday.Controls.Add(this.flowLayoutPanel3);
@@ -262,9 +304,11 @@
             // Monday_label
             // 
             this.Monday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Monday_label.Location = new System.Drawing.Point(618, 0);
+            this.Monday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
+            this.Monday_label.Location = new System.Drawing.Point(618, 3);
+            this.Monday_label.Margin = new System.Windows.Forms.Padding(3);
             this.Monday_label.Name = "Monday_label";
-            this.Monday_label.Size = new System.Drawing.Size(66, 66);
+            this.Monday_label.Size = new System.Drawing.Size(66, 60);
             this.Monday_label.TabIndex = 0;
             this.Monday_label.Text = "Monday";
             this.Monday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -349,6 +393,66 @@
             this.Monday_Fourth.TextColor = System.Drawing.Color.Black;
             this.Monday_Fourth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             // 
+            // Monday_Fifth
+            // 
+            this.Monday_Fifth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Monday_Fifth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
+            this.Monday_Fifth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Monday_Fifth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Monday_Fifth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Monday_Fifth.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Monday_Fifth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Monday_Fifth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Monday_Fifth.Location = new System.Drawing.Point(183, 3);
+            this.Monday_Fifth.Name = "Monday_Fifth";
+            this.Monday_Fifth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Monday_Fifth.Size = new System.Drawing.Size(81, 60);
+            this.Monday_Fifth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Monday_Fifth.TabIndex = 8;
+            this.Monday_Fifth.Text = "5 Fifth";
+            this.Monday_Fifth.TextColor = System.Drawing.Color.Black;
+            this.Monday_Fifth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
+            // Monday_Sixth
+            // 
+            this.Monday_Sixth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Monday_Sixth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
+            this.Monday_Sixth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Monday_Sixth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Monday_Sixth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Monday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Monday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Monday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Monday_Sixth.Location = new System.Drawing.Point(96, 3);
+            this.Monday_Sixth.Name = "Monday_Sixth";
+            this.Monday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Monday_Sixth.Size = new System.Drawing.Size(81, 60);
+            this.Monday_Sixth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Monday_Sixth.TabIndex = 8;
+            this.Monday_Sixth.Text = "6 Sixth";
+            this.Monday_Sixth.TextColor = System.Drawing.Color.Black;
+            this.Monday_Sixth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
+            // Monday_Seventh
+            // 
+            this.Monday_Seventh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Monday_Seventh.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
+            this.Monday_Seventh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Monday_Seventh.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Monday_Seventh.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Monday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Monday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Monday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Monday_Seventh.Location = new System.Drawing.Point(9, 3);
+            this.Monday_Seventh.Name = "Monday_Seventh";
+            this.Monday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Monday_Seventh.Size = new System.Drawing.Size(81, 60);
+            this.Monday_Seventh.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Monday_Seventh.TabIndex = 8;
+            this.Monday_Seventh.Text = "7 Seventh";
+            this.Monday_Seventh.TextColor = System.Drawing.Color.Black;
+            this.Monday_Seventh.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
             // Tuesday
             // 
             this.Tuesday.Controls.Add(this.flowLayoutPanel4);
@@ -380,9 +484,11 @@
             // Tuesday_label
             // 
             this.Tuesday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Tuesday_label.Location = new System.Drawing.Point(618, 0);
+            this.Tuesday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
+            this.Tuesday_label.Location = new System.Drawing.Point(618, 3);
+            this.Tuesday_label.Margin = new System.Windows.Forms.Padding(3);
             this.Tuesday_label.Name = "Tuesday_label";
-            this.Tuesday_label.Size = new System.Drawing.Size(66, 66);
+            this.Tuesday_label.Size = new System.Drawing.Size(66, 60);
             this.Tuesday_label.TabIndex = 0;
             this.Tuesday_label.Text = "Tuesday";
             this.Tuesday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -467,6 +573,66 @@
             this.Tuesday_Fourth.TextColor = System.Drawing.Color.Black;
             this.Tuesday_Fourth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             // 
+            // Tuesday_Fifth
+            // 
+            this.Tuesday_Fifth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Tuesday_Fifth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
+            this.Tuesday_Fifth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Tuesday_Fifth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Tuesday_Fifth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Tuesday_Fifth.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Tuesday_Fifth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Tuesday_Fifth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Tuesday_Fifth.Location = new System.Drawing.Point(183, 3);
+            this.Tuesday_Fifth.Name = "Tuesday_Fifth";
+            this.Tuesday_Fifth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Tuesday_Fifth.Size = new System.Drawing.Size(81, 60);
+            this.Tuesday_Fifth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Tuesday_Fifth.TabIndex = 8;
+            this.Tuesday_Fifth.Text = "5 Fifth";
+            this.Tuesday_Fifth.TextColor = System.Drawing.Color.Black;
+            this.Tuesday_Fifth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
+            // Tuesday_Sixth
+            // 
+            this.Tuesday_Sixth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Tuesday_Sixth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
+            this.Tuesday_Sixth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Tuesday_Sixth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Tuesday_Sixth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Tuesday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Tuesday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Tuesday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Tuesday_Sixth.Location = new System.Drawing.Point(96, 3);
+            this.Tuesday_Sixth.Name = "Tuesday_Sixth";
+            this.Tuesday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Tuesday_Sixth.Size = new System.Drawing.Size(81, 60);
+            this.Tuesday_Sixth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Tuesday_Sixth.TabIndex = 8;
+            this.Tuesday_Sixth.Text = "6 Sixth";
+            this.Tuesday_Sixth.TextColor = System.Drawing.Color.Black;
+            this.Tuesday_Sixth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
+            // Tuesday_Seventh
+            // 
+            this.Tuesday_Seventh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Tuesday_Seventh.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
+            this.Tuesday_Seventh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Tuesday_Seventh.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Tuesday_Seventh.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Tuesday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Tuesday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Tuesday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Tuesday_Seventh.Location = new System.Drawing.Point(9, 3);
+            this.Tuesday_Seventh.Name = "Tuesday_Seventh";
+            this.Tuesday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Tuesday_Seventh.Size = new System.Drawing.Size(81, 60);
+            this.Tuesday_Seventh.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Tuesday_Seventh.TabIndex = 8;
+            this.Tuesday_Seventh.Text = "7 Seventh";
+            this.Tuesday_Seventh.TextColor = System.Drawing.Color.Black;
+            this.Tuesday_Seventh.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
             // Wednesday
             // 
             this.Wednesday.Controls.Add(this.flowLayoutPanel5);
@@ -498,9 +664,11 @@
             // Wednesday_label
             // 
             this.Wednesday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Wednesday_label.Location = new System.Drawing.Point(618, 0);
+            this.Wednesday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
+            this.Wednesday_label.Location = new System.Drawing.Point(618, 3);
+            this.Wednesday_label.Margin = new System.Windows.Forms.Padding(3);
             this.Wednesday_label.Name = "Wednesday_label";
-            this.Wednesday_label.Size = new System.Drawing.Size(66, 66);
+            this.Wednesday_label.Size = new System.Drawing.Size(66, 60);
             this.Wednesday_label.TabIndex = 0;
             this.Wednesday_label.Text = "Wednesday";
             this.Wednesday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -585,8 +753,69 @@
             this.Wednesday_Fourth.TextColor = System.Drawing.Color.Black;
             this.Wednesday_Fourth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             // 
+            // Wednesday_Fifth
+            // 
+            this.Wednesday_Fifth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Wednesday_Fifth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
+            this.Wednesday_Fifth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Wednesday_Fifth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Wednesday_Fifth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Wednesday_Fifth.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Wednesday_Fifth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Wednesday_Fifth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Wednesday_Fifth.Location = new System.Drawing.Point(183, 3);
+            this.Wednesday_Fifth.Name = "Wednesday_Fifth";
+            this.Wednesday_Fifth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Wednesday_Fifth.Size = new System.Drawing.Size(81, 60);
+            this.Wednesday_Fifth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Wednesday_Fifth.TabIndex = 8;
+            this.Wednesday_Fifth.Text = "5 Fifth";
+            this.Wednesday_Fifth.TextColor = System.Drawing.Color.Black;
+            this.Wednesday_Fifth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
+            // Wednesday_Sixth
+            // 
+            this.Wednesday_Sixth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Wednesday_Sixth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
+            this.Wednesday_Sixth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Wednesday_Sixth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Wednesday_Sixth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Wednesday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Wednesday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Wednesday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Wednesday_Sixth.Location = new System.Drawing.Point(96, 3);
+            this.Wednesday_Sixth.Name = "Wednesday_Sixth";
+            this.Wednesday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Wednesday_Sixth.Size = new System.Drawing.Size(81, 60);
+            this.Wednesday_Sixth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Wednesday_Sixth.TabIndex = 8;
+            this.Wednesday_Sixth.Text = "6 Sixth";
+            this.Wednesday_Sixth.TextColor = System.Drawing.Color.Black;
+            this.Wednesday_Sixth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
+            // Wednesday_Seventh
+            // 
+            this.Wednesday_Seventh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Wednesday_Seventh.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
+            this.Wednesday_Seventh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Wednesday_Seventh.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Wednesday_Seventh.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Wednesday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Wednesday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Wednesday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Wednesday_Seventh.Location = new System.Drawing.Point(9, 3);
+            this.Wednesday_Seventh.Name = "Wednesday_Seventh";
+            this.Wednesday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Wednesday_Seventh.Size = new System.Drawing.Size(81, 60);
+            this.Wednesday_Seventh.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Wednesday_Seventh.TabIndex = 8;
+            this.Wednesday_Seventh.Text = "7 Seventh";
+            this.Wednesday_Seventh.TextColor = System.Drawing.Color.Black;
+            this.Wednesday_Seventh.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
             // Thursday
             // 
+            this.Thursday.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Thursday.Controls.Add(this.flowLayoutPanel6);
             this.Thursday.Dock = System.Windows.Forms.DockStyle.Top;
             this.Thursday.Location = new System.Drawing.Point(0, 340);
@@ -616,9 +845,11 @@
             // Thursday_label
             // 
             this.Thursday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Thursday_label.Location = new System.Drawing.Point(618, 0);
+            this.Thursday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
+            this.Thursday_label.Location = new System.Drawing.Point(618, 3);
+            this.Thursday_label.Margin = new System.Windows.Forms.Padding(3);
             this.Thursday_label.Name = "Thursday_label";
-            this.Thursday_label.Size = new System.Drawing.Size(66, 66);
+            this.Thursday_label.Size = new System.Drawing.Size(66, 60);
             this.Thursday_label.TabIndex = 0;
             this.Thursday_label.Text = "Thursday";
             this.Thursday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -703,79 +934,6 @@
             this.Thursday_Fourth.TextColor = System.Drawing.Color.Black;
             this.Thursday_Fourth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.Thursday);
-            this.panel1.Controls.Add(this.Wednesday);
-            this.panel1.Controls.Add(this.Tuesday);
-            this.panel1.Controls.Add(this.Monday);
-            this.panel1.Controls.Add(this.Sunday);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(693, 458);
-            this.panel1.TabIndex = 5;
-            // 
-            // Monday_Fifth
-            // 
-            this.Monday_Fifth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Monday_Fifth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
-            this.Monday_Fifth.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Monday_Fifth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Monday_Fifth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Monday_Fifth.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Monday_Fifth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Monday_Fifth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Monday_Fifth.Location = new System.Drawing.Point(183, 3);
-            this.Monday_Fifth.Name = "Monday_Fifth";
-            this.Monday_Fifth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Monday_Fifth.Size = new System.Drawing.Size(81, 60);
-            this.Monday_Fifth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Monday_Fifth.TabIndex = 8;
-            this.Monday_Fifth.Text = "5 Fifth";
-            this.Monday_Fifth.TextColor = System.Drawing.Color.Black;
-            this.Monday_Fifth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
-            // Tuesday_Fifth
-            // 
-            this.Tuesday_Fifth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Tuesday_Fifth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
-            this.Tuesday_Fifth.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tuesday_Fifth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Tuesday_Fifth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Tuesday_Fifth.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Tuesday_Fifth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Tuesday_Fifth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Tuesday_Fifth.Location = new System.Drawing.Point(183, 3);
-            this.Tuesday_Fifth.Name = "Tuesday_Fifth";
-            this.Tuesday_Fifth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Tuesday_Fifth.Size = new System.Drawing.Size(81, 60);
-            this.Tuesday_Fifth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Tuesday_Fifth.TabIndex = 8;
-            this.Tuesday_Fifth.Text = "5 Fifth";
-            this.Tuesday_Fifth.TextColor = System.Drawing.Color.Black;
-            this.Tuesday_Fifth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
-            // Wednesday_Fifth
-            // 
-            this.Wednesday_Fifth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Wednesday_Fifth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
-            this.Wednesday_Fifth.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Wednesday_Fifth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Wednesday_Fifth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Wednesday_Fifth.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Wednesday_Fifth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Wednesday_Fifth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Wednesday_Fifth.Location = new System.Drawing.Point(183, 3);
-            this.Wednesday_Fifth.Name = "Wednesday_Fifth";
-            this.Wednesday_Fifth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Wednesday_Fifth.Size = new System.Drawing.Size(81, 60);
-            this.Wednesday_Fifth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Wednesday_Fifth.TabIndex = 8;
-            this.Wednesday_Fifth.Text = "5 Fifth";
-            this.Wednesday_Fifth.TextColor = System.Drawing.Color.Black;
-            this.Wednesday_Fifth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
             // Thursday_Fifth
             // 
             this.Thursday_Fifth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
@@ -795,86 +953,6 @@
             this.Thursday_Fifth.Text = "5 Fifth";
             this.Thursday_Fifth.TextColor = System.Drawing.Color.Black;
             this.Thursday_Fifth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
-            // Sunday_Sixth
-            // 
-            this.Sunday_Sixth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Sunday_Sixth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
-            this.Sunday_Sixth.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Sunday_Sixth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Sunday_Sixth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Sunday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Sunday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Sunday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Sunday_Sixth.Location = new System.Drawing.Point(96, 3);
-            this.Sunday_Sixth.Name = "Sunday_Sixth";
-            this.Sunday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Sunday_Sixth.Size = new System.Drawing.Size(81, 60);
-            this.Sunday_Sixth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Sunday_Sixth.TabIndex = 8;
-            this.Sunday_Sixth.Text = "6 Sixth";
-            this.Sunday_Sixth.TextColor = System.Drawing.Color.Black;
-            this.Sunday_Sixth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
-            // Monday_Sixth
-            // 
-            this.Monday_Sixth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Monday_Sixth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
-            this.Monday_Sixth.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Monday_Sixth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Monday_Sixth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Monday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Monday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Monday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Monday_Sixth.Location = new System.Drawing.Point(96, 3);
-            this.Monday_Sixth.Name = "Monday_Sixth";
-            this.Monday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Monday_Sixth.Size = new System.Drawing.Size(81, 60);
-            this.Monday_Sixth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Monday_Sixth.TabIndex = 8;
-            this.Monday_Sixth.Text = "6 Sixth";
-            this.Monday_Sixth.TextColor = System.Drawing.Color.Black;
-            this.Monday_Sixth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
-            // Tuesday_Sixth
-            // 
-            this.Tuesday_Sixth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Tuesday_Sixth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
-            this.Tuesday_Sixth.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tuesday_Sixth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Tuesday_Sixth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Tuesday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Tuesday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Tuesday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Tuesday_Sixth.Location = new System.Drawing.Point(96, 3);
-            this.Tuesday_Sixth.Name = "Tuesday_Sixth";
-            this.Tuesday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Tuesday_Sixth.Size = new System.Drawing.Size(81, 60);
-            this.Tuesday_Sixth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Tuesday_Sixth.TabIndex = 8;
-            this.Tuesday_Sixth.Text = "6 Sixth";
-            this.Tuesday_Sixth.TextColor = System.Drawing.Color.Black;
-            this.Tuesday_Sixth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
-            // Wednesday_Sixth
-            // 
-            this.Wednesday_Sixth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Wednesday_Sixth.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
-            this.Wednesday_Sixth.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Wednesday_Sixth.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Wednesday_Sixth.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Wednesday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Wednesday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Wednesday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Wednesday_Sixth.Location = new System.Drawing.Point(96, 3);
-            this.Wednesday_Sixth.Name = "Wednesday_Sixth";
-            this.Wednesday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Wednesday_Sixth.Size = new System.Drawing.Size(81, 60);
-            this.Wednesday_Sixth.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Wednesday_Sixth.TabIndex = 8;
-            this.Wednesday_Sixth.Text = "6 Sixth";
-            this.Wednesday_Sixth.TextColor = System.Drawing.Color.Black;
-            this.Wednesday_Sixth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             // 
             // Thursday_Sixth
             // 
@@ -896,86 +974,6 @@
             this.Thursday_Sixth.TextColor = System.Drawing.Color.Black;
             this.Thursday_Sixth.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             // 
-            // Sunday_Seventh
-            // 
-            this.Sunday_Seventh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Sunday_Seventh.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
-            this.Sunday_Seventh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Sunday_Seventh.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Sunday_Seventh.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Sunday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Sunday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Sunday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Sunday_Seventh.Location = new System.Drawing.Point(9, 3);
-            this.Sunday_Seventh.Name = "Sunday_Seventh";
-            this.Sunday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Sunday_Seventh.Size = new System.Drawing.Size(81, 60);
-            this.Sunday_Seventh.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Sunday_Seventh.TabIndex = 8;
-            this.Sunday_Seventh.Text = "7 Seventh";
-            this.Sunday_Seventh.TextColor = System.Drawing.Color.Black;
-            this.Sunday_Seventh.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
-            // Monday_Seventh
-            // 
-            this.Monday_Seventh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Monday_Seventh.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
-            this.Monday_Seventh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Monday_Seventh.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Monday_Seventh.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Monday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Monday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Monday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Monday_Seventh.Location = new System.Drawing.Point(9, 3);
-            this.Monday_Seventh.Name = "Monday_Seventh";
-            this.Monday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Monday_Seventh.Size = new System.Drawing.Size(81, 60);
-            this.Monday_Seventh.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Monday_Seventh.TabIndex = 8;
-            this.Monday_Seventh.Text = "7 Seventh";
-            this.Monday_Seventh.TextColor = System.Drawing.Color.Black;
-            this.Monday_Seventh.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
-            // Tuesday_Seventh
-            // 
-            this.Tuesday_Seventh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Tuesday_Seventh.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
-            this.Tuesday_Seventh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tuesday_Seventh.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Tuesday_Seventh.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Tuesday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Tuesday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Tuesday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Tuesday_Seventh.Location = new System.Drawing.Point(9, 3);
-            this.Tuesday_Seventh.Name = "Tuesday_Seventh";
-            this.Tuesday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Tuesday_Seventh.Size = new System.Drawing.Size(81, 60);
-            this.Tuesday_Seventh.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Tuesday_Seventh.TabIndex = 8;
-            this.Tuesday_Seventh.Text = "7 Seventh";
-            this.Tuesday_Seventh.TextColor = System.Drawing.Color.Black;
-            this.Tuesday_Seventh.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
-            // Wednesday_Seventh
-            // 
-            this.Wednesday_Seventh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Wednesday_Seventh.ButtonType = ReaLTaiizor.Util.HopeButtonType.Default;
-            this.Wednesday_Seventh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Wednesday_Seventh.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Wednesday_Seventh.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Wednesday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Wednesday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Wednesday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Wednesday_Seventh.Location = new System.Drawing.Point(9, 3);
-            this.Wednesday_Seventh.Name = "Wednesday_Seventh";
-            this.Wednesday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Wednesday_Seventh.Size = new System.Drawing.Size(81, 60);
-            this.Wednesday_Seventh.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Wednesday_Seventh.TabIndex = 8;
-            this.Wednesday_Seventh.Text = "7 Seventh";
-            this.Wednesday_Seventh.TextColor = System.Drawing.Color.Black;
-            this.Wednesday_Seventh.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
             // Thursday_Seventh
             // 
             this.Thursday_Seventh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
@@ -995,6 +993,19 @@
             this.Thursday_Seventh.Text = "7 Seventh";
             this.Thursday_Seventh.TextColor = System.Drawing.Color.Black;
             this.Thursday_Seventh.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.Thursday);
+            this.panel1.Controls.Add(this.Wednesday);
+            this.panel1.Controls.Add(this.Tuesday);
+            this.panel1.Controls.Add(this.Monday);
+            this.panel1.Controls.Add(this.Sunday);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(693, 458);
+            this.panel1.TabIndex = 5;
             // 
             // Schedule_Show_v0
             // 
@@ -1033,7 +1044,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.Label Wednesday_label;
         private System.Windows.Forms.GroupBox Thursday;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
         private System.Windows.Forms.Label Thursday_label;
         private System.Windows.Forms.Panel panel1;
         private ReaLTaiizor.Controls.HopeButton Sunday_First;
@@ -1071,5 +1081,6 @@
         private ReaLTaiizor.Controls.HopeButton Wednesday_Seventh;
         private ReaLTaiizor.Controls.HopeButton Thursday_Sixth;
         private ReaLTaiizor.Controls.HopeButton Thursday_Seventh;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
     }
 }

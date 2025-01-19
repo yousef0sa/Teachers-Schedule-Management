@@ -30,7 +30,6 @@
         {
             this.Sunday = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Sunday_label = new System.Windows.Forms.Label();
             this.Sunday_First = new System.Windows.Forms.Button();
             this.Sunday_Second = new System.Windows.Forms.Button();
             this.Sunday_Third = new System.Windows.Forms.Button();
@@ -40,7 +39,6 @@
             this.Sunday_Seventh = new System.Windows.Forms.Button();
             this.Monday = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Monday_label = new System.Windows.Forms.Label();
             this.Monday_First = new System.Windows.Forms.Button();
             this.Monday_Second = new System.Windows.Forms.Button();
             this.Monday_Third = new System.Windows.Forms.Button();
@@ -50,7 +48,6 @@
             this.Monday_Seventh = new System.Windows.Forms.Button();
             this.Tuesday = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Tuesday_label = new System.Windows.Forms.Label();
             this.Tuesday_First = new System.Windows.Forms.Button();
             this.Tuesday_Second = new System.Windows.Forms.Button();
             this.Tuesday_Third = new System.Windows.Forms.Button();
@@ -60,7 +57,6 @@
             this.Tuesday_Seventh = new System.Windows.Forms.Button();
             this.Wednesday = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Wednesday_label = new System.Windows.Forms.Label();
             this.Wednesday_First = new System.Windows.Forms.Button();
             this.Wednesday_Second = new System.Windows.Forms.Button();
             this.Wednesday_Third = new System.Windows.Forms.Button();
@@ -70,7 +66,6 @@
             this.Wednesday_Seventh = new System.Windows.Forms.Button();
             this.Thursday = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Thursday_label = new System.Windows.Forms.Label();
             this.Thursday_First = new System.Windows.Forms.Button();
             this.Thursday_Second = new System.Windows.Forms.Button();
             this.Thursday_Third = new System.Windows.Forms.Button();
@@ -79,12 +74,17 @@
             this.Thursday_Sixth = new System.Windows.Forms.Button();
             this.Thursday_Seventh = new System.Windows.Forms.Button();
             this.Main_UserControl_panel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Cancel_button = new System.Windows.Forms.Button();
             this.Save_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Teacher_name_textBox = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.Sunday_label = new System.Windows.Forms.Label();
+            this.Monday_label = new System.Windows.Forms.Label();
+            this.Tuesday_label = new System.Windows.Forms.Label();
+            this.Wednesday_label = new System.Windows.Forms.Label();
+            this.Thursday_label = new System.Windows.Forms.Label();
             this.Sunday.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.Monday.SuspendLayout();
@@ -96,8 +96,8 @@
             this.Thursday.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
             this.Main_UserControl_panel.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Sunday
@@ -128,19 +128,9 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(689, 66);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
-            // Sunday_label
-            // 
-            this.Sunday_label.BackColor = System.Drawing.SystemColors.Control;
-            this.Sunday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Sunday_label.Location = new System.Drawing.Point(620, 0);
-            this.Sunday_label.Name = "Sunday_label";
-            this.Sunday_label.Size = new System.Drawing.Size(66, 66);
-            this.Sunday_label.TabIndex = 0;
-            this.Sunday_label.Text = "Sunday";
-            this.Sunday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Sunday_First
             // 
+            this.Sunday_First.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Sunday_First.Location = new System.Drawing.Point(533, 3);
             this.Sunday_First.Name = "Sunday_First";
             this.Sunday_First.Size = new System.Drawing.Size(81, 60);
@@ -150,6 +140,7 @@
             // 
             // Sunday_Second
             // 
+            this.Sunday_Second.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Sunday_Second.Location = new System.Drawing.Point(446, 3);
             this.Sunday_Second.Name = "Sunday_Second";
             this.Sunday_Second.Size = new System.Drawing.Size(81, 60);
@@ -159,6 +150,7 @@
             // 
             // Sunday_Third
             // 
+            this.Sunday_Third.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Sunday_Third.Location = new System.Drawing.Point(359, 3);
             this.Sunday_Third.Name = "Sunday_Third";
             this.Sunday_Third.Size = new System.Drawing.Size(81, 60);
@@ -168,6 +160,7 @@
             // 
             // Sunday_Fourth
             // 
+            this.Sunday_Fourth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Sunday_Fourth.Location = new System.Drawing.Point(272, 3);
             this.Sunday_Fourth.Name = "Sunday_Fourth";
             this.Sunday_Fourth.Size = new System.Drawing.Size(81, 60);
@@ -177,6 +170,7 @@
             // 
             // Sunday_Fifth
             // 
+            this.Sunday_Fifth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Sunday_Fifth.Location = new System.Drawing.Point(185, 3);
             this.Sunday_Fifth.Name = "Sunday_Fifth";
             this.Sunday_Fifth.Size = new System.Drawing.Size(81, 60);
@@ -186,6 +180,7 @@
             // 
             // Sunday_Sixth
             // 
+            this.Sunday_Sixth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Sunday_Sixth.Location = new System.Drawing.Point(98, 3);
             this.Sunday_Sixth.Name = "Sunday_Sixth";
             this.Sunday_Sixth.Size = new System.Drawing.Size(81, 60);
@@ -195,6 +190,7 @@
             // 
             // Sunday_Seventh
             // 
+            this.Sunday_Seventh.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Sunday_Seventh.Location = new System.Drawing.Point(11, 3);
             this.Sunday_Seventh.Name = "Sunday_Seventh";
             this.Sunday_Seventh.Size = new System.Drawing.Size(81, 60);
@@ -230,18 +226,9 @@
             this.flowLayoutPanel3.Size = new System.Drawing.Size(689, 66);
             this.flowLayoutPanel3.TabIndex = 0;
             // 
-            // Monday_label
-            // 
-            this.Monday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Monday_label.Location = new System.Drawing.Point(620, 0);
-            this.Monday_label.Name = "Monday_label";
-            this.Monday_label.Size = new System.Drawing.Size(66, 66);
-            this.Monday_label.TabIndex = 0;
-            this.Monday_label.Text = "Monday";
-            this.Monday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Monday_First
             // 
+            this.Monday_First.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Monday_First.Location = new System.Drawing.Point(533, 3);
             this.Monday_First.Name = "Monday_First";
             this.Monday_First.Size = new System.Drawing.Size(81, 60);
@@ -251,6 +238,7 @@
             // 
             // Monday_Second
             // 
+            this.Monday_Second.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Monday_Second.Location = new System.Drawing.Point(446, 3);
             this.Monday_Second.Name = "Monday_Second";
             this.Monday_Second.Size = new System.Drawing.Size(81, 60);
@@ -260,6 +248,7 @@
             // 
             // Monday_Third
             // 
+            this.Monday_Third.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Monday_Third.Location = new System.Drawing.Point(359, 3);
             this.Monday_Third.Name = "Monday_Third";
             this.Monday_Third.Size = new System.Drawing.Size(81, 60);
@@ -269,6 +258,7 @@
             // 
             // Monday_Fourth
             // 
+            this.Monday_Fourth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Monday_Fourth.Location = new System.Drawing.Point(272, 3);
             this.Monday_Fourth.Name = "Monday_Fourth";
             this.Monday_Fourth.Size = new System.Drawing.Size(81, 60);
@@ -278,6 +268,7 @@
             // 
             // Monday_Fifth
             // 
+            this.Monday_Fifth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Monday_Fifth.Location = new System.Drawing.Point(185, 3);
             this.Monday_Fifth.Name = "Monday_Fifth";
             this.Monday_Fifth.Size = new System.Drawing.Size(81, 60);
@@ -287,6 +278,7 @@
             // 
             // Monday_Sixth
             // 
+            this.Monday_Sixth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Monday_Sixth.Location = new System.Drawing.Point(98, 3);
             this.Monday_Sixth.Name = "Monday_Sixth";
             this.Monday_Sixth.Size = new System.Drawing.Size(81, 60);
@@ -296,6 +288,7 @@
             // 
             // Monday_Seventh
             // 
+            this.Monday_Seventh.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Monday_Seventh.Location = new System.Drawing.Point(11, 3);
             this.Monday_Seventh.Name = "Monday_Seventh";
             this.Monday_Seventh.Size = new System.Drawing.Size(81, 60);
@@ -331,18 +324,9 @@
             this.flowLayoutPanel4.Size = new System.Drawing.Size(689, 66);
             this.flowLayoutPanel4.TabIndex = 0;
             // 
-            // Tuesday_label
-            // 
-            this.Tuesday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Tuesday_label.Location = new System.Drawing.Point(620, 0);
-            this.Tuesday_label.Name = "Tuesday_label";
-            this.Tuesday_label.Size = new System.Drawing.Size(66, 66);
-            this.Tuesday_label.TabIndex = 0;
-            this.Tuesday_label.Text = "Tuesday";
-            this.Tuesday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Tuesday_First
             // 
+            this.Tuesday_First.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Tuesday_First.Location = new System.Drawing.Point(533, 3);
             this.Tuesday_First.Name = "Tuesday_First";
             this.Tuesday_First.Size = new System.Drawing.Size(81, 60);
@@ -352,6 +336,7 @@
             // 
             // Tuesday_Second
             // 
+            this.Tuesday_Second.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Tuesday_Second.Location = new System.Drawing.Point(446, 3);
             this.Tuesday_Second.Name = "Tuesday_Second";
             this.Tuesday_Second.Size = new System.Drawing.Size(81, 60);
@@ -361,6 +346,7 @@
             // 
             // Tuesday_Third
             // 
+            this.Tuesday_Third.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Tuesday_Third.Location = new System.Drawing.Point(359, 3);
             this.Tuesday_Third.Name = "Tuesday_Third";
             this.Tuesday_Third.Size = new System.Drawing.Size(81, 60);
@@ -370,6 +356,7 @@
             // 
             // Tuesday_Fourth
             // 
+            this.Tuesday_Fourth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Tuesday_Fourth.Location = new System.Drawing.Point(272, 3);
             this.Tuesday_Fourth.Name = "Tuesday_Fourth";
             this.Tuesday_Fourth.Size = new System.Drawing.Size(81, 60);
@@ -379,6 +366,7 @@
             // 
             // Tuesday_Fifth
             // 
+            this.Tuesday_Fifth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Tuesday_Fifth.Location = new System.Drawing.Point(185, 3);
             this.Tuesday_Fifth.Name = "Tuesday_Fifth";
             this.Tuesday_Fifth.Size = new System.Drawing.Size(81, 60);
@@ -388,6 +376,7 @@
             // 
             // Tuesday_Sixth
             // 
+            this.Tuesday_Sixth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Tuesday_Sixth.Location = new System.Drawing.Point(98, 3);
             this.Tuesday_Sixth.Name = "Tuesday_Sixth";
             this.Tuesday_Sixth.Size = new System.Drawing.Size(81, 60);
@@ -397,6 +386,7 @@
             // 
             // Tuesday_Seventh
             // 
+            this.Tuesday_Seventh.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Tuesday_Seventh.Location = new System.Drawing.Point(11, 3);
             this.Tuesday_Seventh.Name = "Tuesday_Seventh";
             this.Tuesday_Seventh.Size = new System.Drawing.Size(81, 60);
@@ -432,18 +422,9 @@
             this.flowLayoutPanel5.Size = new System.Drawing.Size(689, 66);
             this.flowLayoutPanel5.TabIndex = 0;
             // 
-            // Wednesday_label
-            // 
-            this.Wednesday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Wednesday_label.Location = new System.Drawing.Point(620, 0);
-            this.Wednesday_label.Name = "Wednesday_label";
-            this.Wednesday_label.Size = new System.Drawing.Size(66, 66);
-            this.Wednesday_label.TabIndex = 0;
-            this.Wednesday_label.Text = "Wednesday";
-            this.Wednesday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Wednesday_First
             // 
+            this.Wednesday_First.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Wednesday_First.Location = new System.Drawing.Point(533, 3);
             this.Wednesday_First.Name = "Wednesday_First";
             this.Wednesday_First.Size = new System.Drawing.Size(81, 60);
@@ -453,6 +434,7 @@
             // 
             // Wednesday_Second
             // 
+            this.Wednesday_Second.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Wednesday_Second.Location = new System.Drawing.Point(446, 3);
             this.Wednesday_Second.Name = "Wednesday_Second";
             this.Wednesday_Second.Size = new System.Drawing.Size(81, 60);
@@ -462,6 +444,7 @@
             // 
             // Wednesday_Third
             // 
+            this.Wednesday_Third.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Wednesday_Third.Location = new System.Drawing.Point(359, 3);
             this.Wednesday_Third.Name = "Wednesday_Third";
             this.Wednesday_Third.Size = new System.Drawing.Size(81, 60);
@@ -471,6 +454,7 @@
             // 
             // Wednesday_Fourth
             // 
+            this.Wednesday_Fourth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Wednesday_Fourth.Location = new System.Drawing.Point(272, 3);
             this.Wednesday_Fourth.Name = "Wednesday_Fourth";
             this.Wednesday_Fourth.Size = new System.Drawing.Size(81, 60);
@@ -480,6 +464,7 @@
             // 
             // Wednesday_Fifth
             // 
+            this.Wednesday_Fifth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Wednesday_Fifth.Location = new System.Drawing.Point(185, 3);
             this.Wednesday_Fifth.Name = "Wednesday_Fifth";
             this.Wednesday_Fifth.Size = new System.Drawing.Size(81, 60);
@@ -489,6 +474,7 @@
             // 
             // Wednesday_Sixth
             // 
+            this.Wednesday_Sixth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Wednesday_Sixth.Location = new System.Drawing.Point(98, 3);
             this.Wednesday_Sixth.Name = "Wednesday_Sixth";
             this.Wednesday_Sixth.Size = new System.Drawing.Size(81, 60);
@@ -498,6 +484,7 @@
             // 
             // Wednesday_Seventh
             // 
+            this.Wednesday_Seventh.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Wednesday_Seventh.Location = new System.Drawing.Point(11, 3);
             this.Wednesday_Seventh.Name = "Wednesday_Seventh";
             this.Wednesday_Seventh.Size = new System.Drawing.Size(81, 60);
@@ -533,18 +520,9 @@
             this.flowLayoutPanel6.Size = new System.Drawing.Size(689, 66);
             this.flowLayoutPanel6.TabIndex = 0;
             // 
-            // Thursday_label
-            // 
-            this.Thursday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Thursday_label.Location = new System.Drawing.Point(620, 0);
-            this.Thursday_label.Name = "Thursday_label";
-            this.Thursday_label.Size = new System.Drawing.Size(66, 66);
-            this.Thursday_label.TabIndex = 0;
-            this.Thursday_label.Text = "Thursday";
-            this.Thursday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Thursday_First
             // 
+            this.Thursday_First.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Thursday_First.Location = new System.Drawing.Point(533, 3);
             this.Thursday_First.Name = "Thursday_First";
             this.Thursday_First.Size = new System.Drawing.Size(81, 60);
@@ -554,6 +532,7 @@
             // 
             // Thursday_Second
             // 
+            this.Thursday_Second.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Thursday_Second.Location = new System.Drawing.Point(446, 3);
             this.Thursday_Second.Name = "Thursday_Second";
             this.Thursday_Second.Size = new System.Drawing.Size(81, 60);
@@ -563,6 +542,7 @@
             // 
             // Thursday_Third
             // 
+            this.Thursday_Third.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Thursday_Third.Location = new System.Drawing.Point(359, 3);
             this.Thursday_Third.Name = "Thursday_Third";
             this.Thursday_Third.Size = new System.Drawing.Size(81, 60);
@@ -572,6 +552,7 @@
             // 
             // Thursday_Fourth
             // 
+            this.Thursday_Fourth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Thursday_Fourth.Location = new System.Drawing.Point(272, 3);
             this.Thursday_Fourth.Name = "Thursday_Fourth";
             this.Thursday_Fourth.Size = new System.Drawing.Size(81, 60);
@@ -581,6 +562,7 @@
             // 
             // Thursday_Fifth
             // 
+            this.Thursday_Fifth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Thursday_Fifth.Location = new System.Drawing.Point(185, 3);
             this.Thursday_Fifth.Name = "Thursday_Fifth";
             this.Thursday_Fifth.Size = new System.Drawing.Size(81, 60);
@@ -590,6 +572,7 @@
             // 
             // Thursday_Sixth
             // 
+            this.Thursday_Sixth.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Thursday_Sixth.Location = new System.Drawing.Point(98, 3);
             this.Thursday_Sixth.Name = "Thursday_Sixth";
             this.Thursday_Sixth.Size = new System.Drawing.Size(81, 60);
@@ -599,6 +582,7 @@
             // 
             // Thursday_Seventh
             // 
+            this.Thursday_Seventh.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Thursday_Seventh.Location = new System.Drawing.Point(11, 3);
             this.Thursday_Seventh.Name = "Thursday_Seventh";
             this.Thursday_Seventh.Size = new System.Drawing.Size(81, 60);
@@ -615,6 +599,20 @@
             this.Main_UserControl_panel.Name = "Main_UserControl_panel";
             this.Main_UserControl_panel.Size = new System.Drawing.Size(695, 485);
             this.Main_UserControl_panel.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.Controls.Add(this.Thursday);
+            this.panel2.Controls.Add(this.Wednesday);
+            this.panel2.Controls.Add(this.Tuesday);
+            this.panel2.Controls.Add(this.Monday);
+            this.panel2.Controls.Add(this.Sunday);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 49);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(695, 436);
+            this.panel2.TabIndex = 1;
             // 
             // panel1
             // 
@@ -658,9 +656,10 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label1.Location = new System.Drawing.Point(625, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(65, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = ":اسم المعلم";
             // 
@@ -669,25 +668,72 @@
             this.Teacher_name_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Teacher_name_textBox.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.Teacher_name_textBox.Location = new System.Drawing.Point(414, 11);
+            this.Teacher_name_textBox.Location = new System.Drawing.Point(362, 11);
             this.Teacher_name_textBox.Name = "Teacher_name_textBox";
-            this.Teacher_name_textBox.Size = new System.Drawing.Size(200, 27);
+            this.Teacher_name_textBox.Size = new System.Drawing.Size(252, 27);
             this.Teacher_name_textBox.TabIndex = 1;
             this.Teacher_name_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // panel2
+            // Sunday_label
             // 
-            this.panel2.AutoSize = true;
-            this.panel2.Controls.Add(this.Thursday);
-            this.panel2.Controls.Add(this.Wednesday);
-            this.panel2.Controls.Add(this.Tuesday);
-            this.panel2.Controls.Add(this.Monday);
-            this.panel2.Controls.Add(this.Sunday);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 49);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(695, 436);
-            this.panel2.TabIndex = 1;
+            this.Sunday_label.BackColor = System.Drawing.SystemColors.Control;
+            this.Sunday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Sunday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
+            this.Sunday_label.Location = new System.Drawing.Point(620, 3);
+            this.Sunday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Sunday_label.Name = "Sunday_label";
+            this.Sunday_label.Size = new System.Drawing.Size(66, 60);
+            this.Sunday_label.TabIndex = 9;
+            this.Sunday_label.Text = "Sunday";
+            this.Sunday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Monday_label
+            // 
+            this.Monday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Monday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
+            this.Monday_label.Location = new System.Drawing.Point(620, 3);
+            this.Monday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Monday_label.Name = "Monday_label";
+            this.Monday_label.Size = new System.Drawing.Size(66, 60);
+            this.Monday_label.TabIndex = 10;
+            this.Monday_label.Text = "Monday";
+            this.Monday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Tuesday_label
+            // 
+            this.Tuesday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Tuesday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
+            this.Tuesday_label.Location = new System.Drawing.Point(620, 3);
+            this.Tuesday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Tuesday_label.Name = "Tuesday_label";
+            this.Tuesday_label.Size = new System.Drawing.Size(66, 60);
+            this.Tuesday_label.TabIndex = 10;
+            this.Tuesday_label.Text = "Tuesday";
+            this.Tuesday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Wednesday_label
+            // 
+            this.Wednesday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Wednesday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
+            this.Wednesday_label.Location = new System.Drawing.Point(620, 3);
+            this.Wednesday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Wednesday_label.Name = "Wednesday_label";
+            this.Wednesday_label.Size = new System.Drawing.Size(66, 60);
+            this.Wednesday_label.TabIndex = 10;
+            this.Wednesday_label.Text = "Wednesday";
+            this.Wednesday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Thursday_label
+            // 
+            this.Thursday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Thursday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
+            this.Thursday_label.Location = new System.Drawing.Point(620, 3);
+            this.Thursday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Thursday_label.Name = "Thursday_label";
+            this.Thursday_label.Size = new System.Drawing.Size(66, 60);
+            this.Thursday_label.TabIndex = 10;
+            this.Thursday_label.Text = "Thursday";
+            this.Thursday_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Schedule_Add_v0
             // 
@@ -710,9 +756,9 @@
             this.flowLayoutPanel6.ResumeLayout(false);
             this.Main_UserControl_panel.ResumeLayout(false);
             this.Main_UserControl_panel.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -720,7 +766,6 @@
         #endregion
         private System.Windows.Forms.GroupBox Sunday;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Label Sunday_label;
         private System.Windows.Forms.Button Sunday_First;
         private System.Windows.Forms.Button Sunday_Second;
         private System.Windows.Forms.Button Sunday_Third;
@@ -730,7 +775,6 @@
         private System.Windows.Forms.Button Sunday_Seventh;
         private System.Windows.Forms.GroupBox Monday;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.Label Monday_label;
         private System.Windows.Forms.Button Monday_First;
         private System.Windows.Forms.Button Monday_Second;
         private System.Windows.Forms.Button Monday_Third;
@@ -740,7 +784,6 @@
         private System.Windows.Forms.Button Monday_Seventh;
         private System.Windows.Forms.GroupBox Tuesday;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.Label Tuesday_label;
         private System.Windows.Forms.Button Tuesday_First;
         private System.Windows.Forms.Button Tuesday_Second;
         private System.Windows.Forms.Button Tuesday_Third;
@@ -750,7 +793,6 @@
         private System.Windows.Forms.Button Tuesday_Seventh;
         private System.Windows.Forms.GroupBox Wednesday;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
-        private System.Windows.Forms.Label Wednesday_label;
         private System.Windows.Forms.Button Wednesday_First;
         private System.Windows.Forms.Button Wednesday_Second;
         private System.Windows.Forms.Button Wednesday_Third;
@@ -760,7 +802,6 @@
         private System.Windows.Forms.Button Wednesday_Seventh;
         private System.Windows.Forms.GroupBox Thursday;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
-        private System.Windows.Forms.Label Thursday_label;
         private System.Windows.Forms.Button Thursday_First;
         private System.Windows.Forms.Button Thursday_Second;
         private System.Windows.Forms.Button Thursday_Third;
@@ -775,6 +816,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Teacher_name_textBox;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label Sunday_label;
+        private System.Windows.Forms.Label Monday_label;
+        private System.Windows.Forms.Label Tuesday_label;
+        private System.Windows.Forms.Label Wednesday_label;
+        private System.Windows.Forms.Label Thursday_label;
     }
 
 }
