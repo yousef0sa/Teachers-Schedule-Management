@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 using Teachers__Schedule_Management.Forms;
+using Teachers__Schedule_Management.Home;
 using Teachers__Schedule_Management.NewFolder1;
 using Teachers__Schedule_Management.User_Control;
-using Teachers__Schedule_Management.Home;
 
 namespace Teachers__Schedule_Management
 {
@@ -44,18 +44,28 @@ namespace Teachers__Schedule_Management
 
         private void Delete_record_button_Click(object sender, EventArgs e)
         {
-            // Delete old data
-            string jsonFilePath = "schedule_Reserve_Data.json";
-            if (System.IO.File.Exists(jsonFilePath))
+            // Confirm deletion
+            if (MessageBox.Show("Are you sure you want to delete the reserve record?", "Delete Data", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if (MessageBox.Show("Are you sure you want to delete the data?", "Delete Data", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                try
                 {
-                    System.IO.File.Delete(jsonFilePath);
+                    // Create an instance of TeacherDataLoader
+                    TeacherDataLoader dataLoader = new TeacherDataLoader();
+
+                    // Call DeleteReserveRecord method
+                    if (dataLoader.DeleteReserveRecord() == true)
+                    {
+                        MessageBox.Show("Reserve record deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("No data to delete.", "No Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Deletion canceled.", "Canceled", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

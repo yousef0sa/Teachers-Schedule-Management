@@ -23,32 +23,23 @@ namespace Teachers__Schedule_Management.User_Control
 
         private void LoadAvailableTeachers()
         {
-            string jsonFilePath = "scheduleData.json";
-            string reserveJsonFilePath = "schedule_Reserve_Data.json";
+            const string mainScheduleFile = "scheduleData.json";
+            const string reserveScheduleFile = "schedule_Reserve_Data.json";
 
-            if (!File.Exists(jsonFilePath))
+            if (!File.Exists(mainScheduleFile))
             {
                 ShowErrorMessage("No data.", "Missing file");
                 return;
             }
 
-            string jsonData = File.ReadAllText(jsonFilePath);
-            string reserveJsonData = File.Exists(reserveJsonFilePath) ? File.ReadAllText(reserveJsonFilePath) : string.Empty;
-
-            if (string.IsNullOrWhiteSpace(jsonData))
-            {
-                ShowErrorMessage("No data.", "Empty");
-                return;
-            }
-
-            List<TeacherData> teachers = DeserializeJsonData<List<TeacherData>>(jsonData);
-            List<TeacherData> reserveTeachers = !string.IsNullOrWhiteSpace(reserveJsonData)
-                ? DeserializeJsonData<List<TeacherData>>(reserveJsonData)
+            var teachers = DeserializeJsonData<List<TeacherData>>(mainScheduleFile);
+            var reserveTeachers = File.Exists(reserveScheduleFile)
+                ? DeserializeJsonData<List<TeacherData>>(reserveScheduleFile)
                 : new List<TeacherData>();
 
-            if (teachers == null)
+            if (teachers == null || !teachers.Any())
             {
-                ShowErrorMessage("Failed to deserialize the main JSON file.", "Error");
+                ShowErrorMessage("Failed to load teacher data.", "Error");
                 return;
             }
 
@@ -63,17 +54,33 @@ namespace Teachers__Schedule_Management.User_Control
             MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private T DeserializeJsonData<T>(string jsonData)
+        private T DeserializeJsonData<T>(string filePath) where T : class
         {
-            return JsonConvert.DeserializeObject<T>(jsonData);
+            try
+            {
+                var jsonData = File.ReadAllText(filePath);
+                if (string.IsNullOrWhiteSpace(jsonData))
+                    return null;
+
+                return JsonConvert.DeserializeObject<T>(jsonData);
+            }
+            catch (Exception ex)
+            {
+                ShowErrorMessage($"Error reading {filePath}: {ex.Message}", "Error");
+                return null;
+            }
         }
 
         private List<TeacherData> GetAvailableTeachers(List<TeacherData> teachers)
         {
-            return teachers.Where(t => t.Schedule.ContainsKey(ButtonName) && t.Schedule[ButtonName] == 0).ToList();
+            return teachers
+                .Where(t => t.Schedule.ContainsKey(ButtonName) && t.Schedule[ButtonName] == 0)
+                .ToList();
         }
 
-        private List<Teacher_Selection_data> CreateTeacherDataList(List<TeacherData> availableTeachers, List<TeacherData> reserveTeachers)
+        private List<Teacher_Selection_data> CreateTeacherDataList(
+            List<TeacherData> availableTeachers,
+            List<TeacherData> reserveTeachers)
         {
             var teacherDataList = new List<Teacher_Selection_data>();
 
@@ -84,7 +91,7 @@ namespace Teachers__Schedule_Management.User_Control
                 int weeklyNumberOfClasses = CalculateWeeklyNumberOfClasses(teacher);
                 int dailyNumberOfClasses = CalculateDailyNumberOfClasses(teacher);
 
-                Teacher_Selection_data teacherData = new Teacher_Selection_data
+                var teacherData = new Teacher_Selection_data
                 {
                     Teacher_name = teacher.TeacherName,
                     Weekly_Reserve_times = weeklyReserveTimes.ToString(),
@@ -94,33 +101,41 @@ namespace Teachers__Schedule_Management.User_Control
                 };
 
                 teacherData.UpdateButtonColor(ButtonName);
-                Update_Teacher_Status(teacherData);
+                UpdateTeacherStatus(teacherData);
 
                 teacherDataList.Add(teacherData);
             }
 
-            return teacherDataList.OrderBy(td => int.Parse(td.Weekly_Number_of_classes) + int.Parse(td.Weekly_Reserve_times)).ToList();
+            return teacherDataList
+                .OrderBy(td => int.Parse(td.Weekly_Number_of_classes) + int.Parse(td.Weekly_Reserve_times))
+                .ToList();
         }
 
         private int CalculateWeeklyReserveTimes(List<TeacherData> reserveTeachers, string teacherName)
         {
-            return reserveTeachers.Where(rt => rt.TeacherName == teacherName).Sum(rt => rt.Schedule.Count);
+            return reserveTeachers
+                .Where(rt => rt.TeacherName == teacherName)
+                .Sum(rt => rt.Schedule.Count);
         }
 
         private int CalculateDailyReserveTimes(List<TeacherData> reserveTeachers, string teacherName)
         {
-            return reserveTeachers.Where(rt => rt.TeacherName == teacherName && rt.Schedule.ContainsKey(ButtonName)).Sum(rt => rt.Schedule[ButtonName]);
+            return reserveTeachers
+                .Where(rt => rt.TeacherName == teacherName && rt.Schedule.ContainsKey(ButtonName))
+                .Sum(rt => rt.Schedule[ButtonName]);
         }
 
         private int CalculateWeeklyNumberOfClasses(TeacherData teacher)
         {
-            return teacher.Schedule.Count(s => s.Value == 1);
+            return teacher.Schedule.Values.Count(value => value == 1);
         }
 
         private int CalculateDailyNumberOfClasses(TeacherData teacher)
         {
             string dayPrefix = ButtonName.Split('_')[0];
-            return teacher.Schedule.Where(s => s.Key.StartsWith(dayPrefix) && s.Value == 1).Count();
+            return teacher.Schedule
+                .Where(s => s.Key.StartsWith(dayPrefix) && s.Value == 1)
+                .Count();
         }
 
         private void AddTeacherDataToPanel(List<Teacher_Selection_data> teacherDataList)
@@ -132,12 +147,13 @@ namespace Teachers__Schedule_Management.User_Control
             }
         }
 
-        private void Update_Teacher_Status(Teacher_Selection_data teacherData)
+        private void UpdateTeacherStatus(Teacher_Selection_data teacherData)
         {
             int totalPoints = int.Parse(teacherData.Weekly_Number_of_classes) + int.Parse(teacherData.Weekly_Reserve_times);
+
             if (totalPoints >= 24)
             {
-                teacherData.Teacher_Status_Notification_Text = "الحالة: مضغوط";
+                teacherData.Teacher_Status_Notification_Text = "الحالة: النصاب";
                 teacherData.Teacher_Status_Notification_Style = ReaLTaiizor.Controls.FoxNotification.Styles.Red;
             }
             else

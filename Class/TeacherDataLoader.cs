@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Teachers__Schedule_Management.Class;
 
 namespace Teachers__Schedule_Management.User_Control
 {
@@ -87,6 +88,28 @@ namespace Teachers__Schedule_Management.User_Control
                 case "thursday": return 4;
                 default: return -1;
             }
+        }
+        public bool DeleteReserveRecord()
+        {
+            string reserveJsonFilePath = "schedule_Reserve_Data.json";
+
+            if (!File.Exists(reserveJsonFilePath))
+            {
+                ShowErrorMessage("No reserve data to delete.", "Information");
+                return false;
+            }
+
+            // Read the reserve data
+            string reserveJsonData = File.ReadAllText(reserveJsonFilePath);
+            List<TeacherData> reserveTeachers = DeserializeJsonData<List<TeacherData>>(reserveJsonData) ?? new List<TeacherData>();
+
+            // Create the reserve log before deletion
+            ReserveLogManager reserveLogManager = new ReserveLogManager();
+            reserveLogManager.CreateReserveLog(reserveTeachers);
+
+            // Delete the reserve data file
+            File.Delete(reserveJsonFilePath);
+            return true;
         }
     }
 }
