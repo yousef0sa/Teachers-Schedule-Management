@@ -1,14 +1,18 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using Newtonsoft.Json;
 
 namespace Teachers__Schedule_Management.User_Control
 {
     public partial class Teacher_Selection_Form : Form
     {
+        private const string MainScheduleFile = "scheduleData.json";
+        private const string ReserveScheduleFile = "schedule_Reserve_Data.json";
+        private const string LogFilePath = "log_Reserve.json";
+
         public string ButtonName { get; set; }
 
         public Teacher_Selection_Form()
@@ -23,30 +27,32 @@ namespace Teachers__Schedule_Management.User_Control
 
         private void LoadAvailableTeachers()
         {
-            const string mainScheduleFile = "scheduleData.json";
-            const string reserveScheduleFile = "schedule_Reserve_Data.json";
-
-            if (!File.Exists(mainScheduleFile))
+            if (!File.Exists(MainScheduleFile))
             {
                 ShowErrorMessage("No data.", "Missing file");
                 return;
             }
 
-            var teachers = DeserializeJsonData<List<TeacherData>>(mainScheduleFile);
-            var reserveTeachers = File.Exists(reserveScheduleFile)
-                ? DeserializeJsonData<List<TeacherData>>(reserveScheduleFile)
-                : new List<TeacherData>();
-
+            var teachers = DeserializeJsonData<List<TeacherData>>(MainScheduleFile);
             if (teachers == null || !teachers.Any())
             {
                 ShowErrorMessage("Failed to load teacher data.", "Error");
                 return;
             }
 
+            var reserveTeachers = LoadReserveTeachers();
             var availableTeachers = GetAvailableTeachers(teachers);
             var teacherDataList = CreateTeacherDataList(availableTeachers, reserveTeachers);
 
             AddTeacherDataToPanel(teacherDataList);
+        }
+
+        private List<TeacherData> LoadReserveTeachers()
+        {
+            if (!File.Exists(ReserveScheduleFile))
+                return new List<TeacherData>();
+
+            return DeserializeJsonData<List<TeacherData>>(ReserveScheduleFile) ?? new List<TeacherData>();
         }
 
         private void ShowErrorMessage(string message, string caption)
@@ -100,6 +106,7 @@ namespace Teachers__Schedule_Management.User_Control
                     Daily_Number_of_classes = dailyNumberOfClasses.ToString(),
                 };
 
+                teacherData.Dock = DockStyle.Top;
                 teacherData.UpdateButtonColor(ButtonName);
                 UpdateTeacherStatus(teacherData);
 
@@ -142,7 +149,6 @@ namespace Teachers__Schedule_Management.User_Control
         {
             foreach (var teacherData in teacherDataList)
             {
-                teacherData.Dock = DockStyle.Top;
                 Main_panel1.Controls.Add(teacherData);
             }
         }
@@ -150,18 +156,48 @@ namespace Teachers__Schedule_Management.User_Control
         private void UpdateTeacherStatus(Teacher_Selection_data teacherData)
         {
             int totalPoints = int.Parse(teacherData.Weekly_Number_of_classes) + int.Parse(teacherData.Weekly_Reserve_times);
+            int repeatCount = GetRepeatCount(teacherData.Teacher_name, ButtonName);
 
-            if (totalPoints >= 24)
+            if (repeatCount > 0)
             {
-                teacherData.Teacher_Status_Notification_Text = "الحالة: النصاب";
+                teacherData.Teacher_Status_Notification_Text = $"Status: Repeat {repeatCount}";
+                teacherData.Teacher_Status_Notification_Style = ReaLTaiizor.Controls.FoxNotification.Styles.Yellow;
+            }
+            else if (totalPoints >= 24)
+            {
+                teacherData.Teacher_Status_Notification_Text = "Status: Limit Reached";
                 teacherData.Teacher_Status_Notification_Style = ReaLTaiizor.Controls.FoxNotification.Styles.Red;
             }
             else
             {
-                teacherData.Teacher_Status_Notification_Text = "الحالة: ممتاز";
+                teacherData.Teacher_Status_Notification_Text = "Status: Excellent";
                 teacherData.Teacher_Status_Notification_Style = ReaLTaiizor.Controls.FoxNotification.Styles.Green;
             }
         }
-    }
 
+        private int GetRepeatCount(string teacherName, string buttonName)
+        {
+            if (!File.Exists(LogFilePath))
+                return 0;
+
+            try
+            {
+                string logJson = File.ReadAllText(LogFilePath);
+                var logData = JsonConvert.DeserializeObject<Dictionary<string, List<TeacherData>>>(logJson);
+                if (logData == null)
+                    return 0;
+
+                return logData.Values
+                    .SelectMany(teacherList => teacherList)
+                    .Count(t => t.TeacherName == teacherName
+                             && t.Schedule.ContainsKey(buttonName)
+                             && t.Schedule[buttonName] == 1);
+            }
+            catch (Exception)
+            {
+                // Log the exception if necessary
+                return 0;
+            }
+        }
+    }
 }

@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Teachers__Schedule_Management.User_Control;
 
 namespace Teachers__Schedule_Management.Class
@@ -29,14 +27,29 @@ namespace Teachers__Schedule_Management.Class
                 ClassDetails = teacher.ClassDetails
             }).ToList();
 
-            var logData = new Dictionary<string, List<TeacherData>>
-                {
-                    { dateRangeKey, filteredReserveData }
-                };
+            var logData = new Dictionary<string, List<TeacherData>>();
+
+            // Load existing log data if the file exists
+            if (File.Exists(_logFilePath))
+            {
+                string existingJson = File.ReadAllText(_logFilePath);
+                logData = JsonConvert.DeserializeObject<Dictionary<string, List<TeacherData>>>(existingJson) ?? new Dictionary<string, List<TeacherData>>();
+            }
+
+            // Add or update the log data with the new entry
+            if (logData.ContainsKey(dateRangeKey))
+            {
+                logData[dateRangeKey].AddRange(filteredReserveData);
+            }
+            else
+            {
+                logData[dateRangeKey] = filteredReserveData;
+            }
 
             string json = JsonConvert.SerializeObject(logData, Formatting.Indented);
             File.WriteAllText(_logFilePath, json);
         }
+
 
         private string GetDateRangeKey()
         {

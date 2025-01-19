@@ -247,7 +247,7 @@
             this.Reserve_button.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
             this.Reserve_button.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Reserve_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Reserve_button.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Reserve_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15F, System.Drawing.FontStyle.Bold);
             this.Reserve_button.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Reserve_button.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
             this.Reserve_button.Location = new System.Drawing.Point(0, 0);
@@ -256,7 +256,7 @@
             this.Reserve_button.Size = new System.Drawing.Size(114, 91);
             this.Reserve_button.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
             this.Reserve_button.TabIndex = 13;
-            this.Reserve_button.Text = "احتياط";
+            this.Reserve_button.Text = "Reserve";
             this.Reserve_button.TextColor = System.Drawing.Color.White;
             this.Reserve_button.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             this.Reserve_button.Click += new System.EventHandler(this.Reserve_button_Click);
@@ -283,16 +283,16 @@
             this.Teacher_Status_Notification.GreenBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(214)))));
             this.Teacher_Status_Notification.GreenBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(229)))), ((int)(((byte)(182)))));
             this.Teacher_Status_Notification.GreenTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(140)))), ((int)(((byte)(69)))));
-            this.Teacher_Status_Notification.Location = new System.Drawing.Point(26, 28);
+            this.Teacher_Status_Notification.Location = new System.Drawing.Point(8, 27);
             this.Teacher_Status_Notification.Name = "Teacher_Status_Notification";
             this.Teacher_Status_Notification.RedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
             this.Teacher_Status_Notification.RedBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(204)))), ((int)(((byte)(209)))));
             this.Teacher_Status_Notification.RedTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(99)))), ((int)(((byte)(94)))));
             this.Teacher_Status_Notification.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Teacher_Status_Notification.Size = new System.Drawing.Size(130, 40);
+            this.Teacher_Status_Notification.Size = new System.Drawing.Size(170, 40);
             this.Teacher_Status_Notification.Style = ReaLTaiizor.Controls.FoxNotification.Styles.Green;
             this.Teacher_Status_Notification.TabIndex = 10;
-            this.Teacher_Status_Notification.Text = "الحالة: ممتازة";
+            this.Teacher_Status_Notification.Text = "Status: Excellent";
             this.Teacher_Status_Notification.YellowBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(248)))), ((int)(((byte)(225)))));
             this.Teacher_Status_Notification.YellowBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.Teacher_Status_Notification.YellowTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(131)))), ((int)(((byte)(88)))));

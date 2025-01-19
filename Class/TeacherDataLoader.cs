@@ -12,39 +12,47 @@ namespace Teachers__Schedule_Management.User_Control
 {
     public class TeacherDataLoader
     {
+        private const string MainScheduleFile = "scheduleData.json";
+        private const string ReserveScheduleFile = "schedule_Reserve_Data.json";
+
         public List<int> LoadAvailableTeachers()
         {
-            string jsonFilePath = "scheduleData.json";
-            string reserveJsonFilePath = "schedule_Reserve_Data.json";
-
-            if (!File.Exists(jsonFilePath))
+            if (!File.Exists(MainScheduleFile))
             {
                 ShowErrorMessage("No data.", "Missing file");
                 return new List<int>();
             }
 
-            string jsonData = File.ReadAllText(jsonFilePath);
-            string reserveJsonData = File.Exists(reserveJsonFilePath) ? File.ReadAllText(reserveJsonFilePath) : string.Empty;
-
+            string jsonData = File.ReadAllText(MainScheduleFile);
             if (string.IsNullOrWhiteSpace(jsonData))
             {
                 ShowErrorMessage("No data.", "Empty");
                 return new List<int>();
             }
 
-            List<TeacherData> teachers = DeserializeJsonData<List<TeacherData>>(jsonData);
-            List<TeacherData> reserveTeachers = !string.IsNullOrWhiteSpace(reserveJsonData)
-                ? DeserializeJsonData<List<TeacherData>>(reserveJsonData)
-                : new List<TeacherData>();
-
+            var teachers = DeserializeJsonData<List<TeacherData>>(jsonData);
             if (teachers == null)
             {
                 ShowErrorMessage("Failed to deserialize the main JSON file.", "Error");
                 return new List<int>();
             }
 
+            var reserveTeachers = LoadReserveTeachers();
             var weeklyReserveData = GetWeeklyReserveData(reserveTeachers);
+
             return weeklyReserveData;
+        }
+
+        private List<TeacherData> LoadReserveTeachers()
+        {
+            if (!File.Exists(ReserveScheduleFile))
+                return new List<TeacherData>();
+
+            string reserveJsonData = File.ReadAllText(ReserveScheduleFile);
+            if (string.IsNullOrWhiteSpace(reserveJsonData))
+                return new List<TeacherData>();
+
+            return DeserializeJsonData<List<TeacherData>>(reserveJsonData);
         }
 
         private void ShowErrorMessage(string message, string caption)
@@ -54,12 +62,20 @@ namespace Teachers__Schedule_Management.User_Control
 
         private T DeserializeJsonData<T>(string jsonData)
         {
-            return JsonConvert.DeserializeObject<T>(jsonData);
+            try
+            {
+                return JsonConvert.DeserializeObject<T>(jsonData);
+            }
+            catch (JsonException ex)
+            {
+                ShowErrorMessage($"Deserialization error: {ex.Message}", "Error");
+                return default;
+            }
         }
 
         private List<int> GetWeeklyReserveData(List<TeacherData> reserveTeachers)
         {
-            var weeklyReserveData = new List<int>(new int[5]); // 5 أيام في الأسبوع
+            var weeklyReserveData = new int[5]; // 5 days in a week
 
             foreach (var teacher in reserveTeachers)
             {
@@ -74,7 +90,7 @@ namespace Teachers__Schedule_Management.User_Control
                 }
             }
 
-            return weeklyReserveData;
+            return weeklyReserveData.ToList();
         }
 
         private int GetDayIndex(string day)
@@ -89,26 +105,25 @@ namespace Teachers__Schedule_Management.User_Control
                 default: return -1;
             }
         }
+
         public bool DeleteReserveRecord()
         {
-            string reserveJsonFilePath = "schedule_Reserve_Data.json";
-
-            if (!File.Exists(reserveJsonFilePath))
+            if (!File.Exists(ReserveScheduleFile))
             {
                 ShowErrorMessage("No reserve data to delete.", "Information");
                 return false;
             }
 
             // Read the reserve data
-            string reserveJsonData = File.ReadAllText(reserveJsonFilePath);
-            List<TeacherData> reserveTeachers = DeserializeJsonData<List<TeacherData>>(reserveJsonData) ?? new List<TeacherData>();
+            string reserveJsonData = File.ReadAllText(ReserveScheduleFile);
+            var reserveTeachers = DeserializeJsonData<List<TeacherData>>(reserveJsonData) ?? new List<TeacherData>();
 
             // Create the reserve log before deletion
-            ReserveLogManager reserveLogManager = new ReserveLogManager();
+            var reserveLogManager = new ReserveLogManager();
             reserveLogManager.CreateReserveLog(reserveTeachers);
 
             // Delete the reserve data file
-            File.Delete(reserveJsonFilePath);
+            File.Delete(ReserveScheduleFile);
             return true;
         }
     }
