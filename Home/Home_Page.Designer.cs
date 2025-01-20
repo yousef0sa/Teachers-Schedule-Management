@@ -63,8 +63,9 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(802, 478);
+            this.panel1.Size = new System.Drawing.Size(732, 477);
             this.panel1.TabIndex = 5;
             // 
             // panel2
@@ -74,9 +75,10 @@
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 213);
+            this.panel2.Location = new System.Drawing.Point(0, 212);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(802, 265);
+            this.panel2.Size = new System.Drawing.Size(732, 265);
             this.panel2.TabIndex = 5;
             // 
             // groupBox4
@@ -85,9 +87,11 @@
             this.groupBox4.Controls.Add(this.parrotCircleProgressBar4);
             this.groupBox4.Controls.Add(this.nightLabel4);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupBox4.Location = new System.Drawing.Point(600, 0);
+            this.groupBox4.Location = new System.Drawing.Point(546, 0);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(204, 265);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.groupBox4.Size = new System.Drawing.Size(184, 265);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
             // 
@@ -97,7 +101,8 @@
             this.nightLabel5.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nightLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel5.Location = new System.Drawing.Point(118, 16);
+            this.nightLabel5.Location = new System.Drawing.Point(102, 17);
+            this.nightLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel5.Name = "nightLabel5";
             this.nightLabel5.Size = new System.Drawing.Size(76, 15);
             this.nightLabel5.TabIndex = 7;
@@ -112,7 +117,8 @@
             this.parrotCircleProgressBar4.FilledThickness = 40;
             this.parrotCircleProgressBar4.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.parrotCircleProgressBar4.IsAnimated = false;
-            this.parrotCircleProgressBar4.Location = new System.Drawing.Point(27, 40);
+            this.parrotCircleProgressBar4.Location = new System.Drawing.Point(16, 40);
+            this.parrotCircleProgressBar4.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.parrotCircleProgressBar4.Name = "parrotCircleProgressBar4";
             this.parrotCircleProgressBar4.Percentage = 50;
             this.parrotCircleProgressBar4.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
@@ -132,7 +138,8 @@
             this.nightLabel4.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nightLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel4.Location = new System.Drawing.Point(61, 210);
+            this.nightLabel4.Location = new System.Drawing.Point(61, 209);
+            this.nightLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel4.Name = "nightLabel4";
             this.nightLabel4.Size = new System.Drawing.Size(83, 15);
             this.nightLabel4.TabIndex = 6;
@@ -144,9 +151,11 @@
             this.groupBox3.Controls.Add(this.parrotCircleProgressBar3);
             this.groupBox3.Controls.Add(this.nightLabel3);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupBox3.Location = new System.Drawing.Point(400, 0);
+            this.groupBox3.Location = new System.Drawing.Point(365, 0);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 265);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.groupBox3.Size = new System.Drawing.Size(181, 265);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             // 
@@ -156,7 +165,8 @@
             this.nightLabel6.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nightLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel6.Location = new System.Drawing.Point(118, 16);
+            this.nightLabel6.Location = new System.Drawing.Point(102, 17);
+            this.nightLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel6.Name = "nightLabel6";
             this.nightLabel6.Size = new System.Drawing.Size(76, 15);
             this.nightLabel6.TabIndex = 8;
@@ -171,7 +181,8 @@
             this.parrotCircleProgressBar3.FilledThickness = 40;
             this.parrotCircleProgressBar3.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.parrotCircleProgressBar3.IsAnimated = false;
-            this.parrotCircleProgressBar3.Location = new System.Drawing.Point(25, 40);
+            this.parrotCircleProgressBar3.Location = new System.Drawing.Point(15, 40);
+            this.parrotCircleProgressBar3.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.parrotCircleProgressBar3.Name = "parrotCircleProgressBar3";
             this.parrotCircleProgressBar3.Percentage = 50;
             this.parrotCircleProgressBar3.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
@@ -191,7 +202,8 @@
             this.nightLabel3.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nightLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel3.Location = new System.Drawing.Point(54, 210);
+            this.nightLabel3.Location = new System.Drawing.Point(54, 209);
+            this.nightLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel3.Name = "nightLabel3";
             this.nightLabel3.Size = new System.Drawing.Size(92, 15);
             this.nightLabel3.TabIndex = 6;
@@ -203,9 +215,11 @@
             this.groupBox2.Controls.Add(this.parrotCircleProgressBar2);
             this.groupBox2.Controls.Add(this.nightLabel2);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupBox2.Location = new System.Drawing.Point(200, 0);
+            this.groupBox2.Location = new System.Drawing.Point(182, 0);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 265);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.groupBox2.Size = new System.Drawing.Size(183, 265);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             // 
@@ -215,7 +229,8 @@
             this.nightLabel7.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nightLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel7.Location = new System.Drawing.Point(118, 16);
+            this.nightLabel7.Location = new System.Drawing.Point(102, 17);
+            this.nightLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel7.Name = "nightLabel7";
             this.nightLabel7.Size = new System.Drawing.Size(76, 15);
             this.nightLabel7.TabIndex = 8;
@@ -230,7 +245,8 @@
             this.parrotCircleProgressBar2.FilledThickness = 40;
             this.parrotCircleProgressBar2.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.parrotCircleProgressBar2.IsAnimated = false;
-            this.parrotCircleProgressBar2.Location = new System.Drawing.Point(25, 40);
+            this.parrotCircleProgressBar2.Location = new System.Drawing.Point(15, 40);
+            this.parrotCircleProgressBar2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.parrotCircleProgressBar2.Name = "parrotCircleProgressBar2";
             this.parrotCircleProgressBar2.Percentage = 50;
             this.parrotCircleProgressBar2.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
@@ -250,7 +266,8 @@
             this.nightLabel2.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nightLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel2.Location = new System.Drawing.Point(54, 210);
+            this.nightLabel2.Location = new System.Drawing.Point(54, 209);
+            this.nightLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel2.Name = "nightLabel2";
             this.nightLabel2.Size = new System.Drawing.Size(92, 15);
             this.nightLabel2.TabIndex = 6;
@@ -263,8 +280,10 @@
             this.groupBox1.Controls.Add(this.nightLabel1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 265);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.groupBox1.Size = new System.Drawing.Size(182, 265);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             // 
@@ -274,7 +293,8 @@
             this.nightLabel8.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nightLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel8.Location = new System.Drawing.Point(118, 16);
+            this.nightLabel8.Location = new System.Drawing.Point(102, 17);
+            this.nightLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel8.Name = "nightLabel8";
             this.nightLabel8.Size = new System.Drawing.Size(76, 15);
             this.nightLabel8.TabIndex = 8;
@@ -289,7 +309,8 @@
             this.parrotCircleProgressBar1.FilledThickness = 40;
             this.parrotCircleProgressBar1.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.parrotCircleProgressBar1.IsAnimated = false;
-            this.parrotCircleProgressBar1.Location = new System.Drawing.Point(25, 40);
+            this.parrotCircleProgressBar1.Location = new System.Drawing.Point(15, 40);
+            this.parrotCircleProgressBar1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.parrotCircleProgressBar1.Name = "parrotCircleProgressBar1";
             this.parrotCircleProgressBar1.Percentage = 30;
             this.parrotCircleProgressBar1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
@@ -309,7 +330,8 @@
             this.nightLabel1.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nightLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel1.Location = new System.Drawing.Point(54, 210);
+            this.nightLabel1.Location = new System.Drawing.Point(54, 209);
+            this.nightLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nightLabel1.Name = "nightLabel1";
             this.nightLabel1.Size = new System.Drawing.Size(92, 15);
             this.nightLabel1.TabIndex = 6;
@@ -320,8 +342,9 @@
             this.panel3.Controls.Add(this.bigLabel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(802, 215);
+            this.panel3.Size = new System.Drawing.Size(732, 215);
             this.panel3.TabIndex = 9;
             // 
             // bigLabel1
@@ -331,7 +354,8 @@
             this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel1.Location = new System.Drawing.Point(353, 84);
+            this.bigLabel1.Location = new System.Drawing.Point(318, 85);
+            this.bigLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bigLabel1.Name = "bigLabel1";
             this.bigLabel1.Size = new System.Drawing.Size(97, 46);
             this.bigLabel1.TabIndex = 1;
@@ -343,8 +367,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "Home_Page";
-            this.Size = new System.Drawing.Size(802, 478);
+            this.Size = new System.Drawing.Size(732, 477);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);

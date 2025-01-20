@@ -22,6 +22,11 @@ namespace Teachers__Schedule_Management
             InitializeAsync();
 
             _updateManager.UpdateProgramVersionLabel(Program_Version_Label);
+
+            //start with home page
+            Page1_panel.Controls.Clear();
+            Home_Page home_page = new Home_Page();
+            Page1_panel.Controls.Add(home_page);
         }
 
         private async void InitializeAsync()
