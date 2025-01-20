@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teachers' Schedule Management", "Teachers' Schedule Management.csproj", "{123C3D5F-7B6B-4B92-B214-887F0967D785}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\Setup\Setup.vdproj", "{B22B553E-195D-421C-974C-647E871B5906}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{123C3D5F-7B6B-4B92-B214-887F0967D785}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{123C3D5F-7B6B-4B92-B214-887F0967D785}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{123C3D5F-7B6B-4B92-B214-887F0967D785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B22B553E-195D-421C-974C-647E871B5906}.Debug|Any CPU.ActiveCfg = Debug
+		{B22B553E-195D-421C-974C-647E871B5906}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,14 +10,24 @@ namespace Teachers__Schedule_Management
 {
     public partial class Form1 : Form
     {
-        private Update _updateManager = new Update();
+        private UpdateUI _updateManager = new UpdateUI();
+        private UpdateHelper updater = new UpdateHelper();
+
 
         public Form1()
         {
             InitializeComponent();
-            _updateManager.CheckForUpdates();
+
+            InitializeAsync();
+
             _updateManager.UpdateProgramVersionLabel(Program_Version_Label);
         }
+
+        private async void InitializeAsync()
+        {
+            await updater.CheckForUpdates();
+        }
+
 
         private void Schedule_button_Click(object sender, EventArgs e)
         {
