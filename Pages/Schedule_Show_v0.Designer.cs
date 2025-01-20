@@ -97,9 +97,11 @@
             this.Sunday.Controls.Add(this.flowLayoutPanel2);
             this.Sunday.Dock = System.Windows.Forms.DockStyle.Top;
             this.Sunday.Location = new System.Drawing.Point(0, 0);
+            this.Sunday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sunday.Name = "Sunday";
+            this.Sunday.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sunday.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Sunday.Size = new System.Drawing.Size(693, 85);
+            this.Sunday.Size = new System.Drawing.Size(693, 84);
             this.Sunday.TabIndex = 0;
             this.Sunday.TabStop = false;
             // 
@@ -115,9 +117,10 @@
             this.flowLayoutPanel2.Controls.Add(this.Sunday_Seventh);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 15);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(687, 66);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(687, 67);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // Sunday_label
@@ -125,8 +128,8 @@
             this.Sunday_label.BackColor = System.Drawing.SystemColors.Control;
             this.Sunday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Sunday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
-            this.Sunday_label.Location = new System.Drawing.Point(618, 3);
-            this.Sunday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Sunday_label.Location = new System.Drawing.Point(618, 2);
+            this.Sunday_label.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sunday_label.Name = "Sunday_label";
             this.Sunday_label.Size = new System.Drawing.Size(66, 60);
             this.Sunday_label.TabIndex = 0;
@@ -143,7 +146,8 @@
             this.Sunday_First.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Sunday_First.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Sunday_First.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Sunday_First.Location = new System.Drawing.Point(531, 3);
+            this.Sunday_First.Location = new System.Drawing.Point(531, 2);
+            this.Sunday_First.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sunday_First.Name = "Sunday_First";
             this.Sunday_First.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Sunday_First.Size = new System.Drawing.Size(81, 60);
@@ -163,7 +167,8 @@
             this.Sunday_Second.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Sunday_Second.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Sunday_Second.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Sunday_Second.Location = new System.Drawing.Point(444, 3);
+            this.Sunday_Second.Location = new System.Drawing.Point(444, 2);
+            this.Sunday_Second.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sunday_Second.Name = "Sunday_Second";
             this.Sunday_Second.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Sunday_Second.Size = new System.Drawing.Size(81, 60);
@@ -183,7 +188,8 @@
             this.Sunday_Third.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Sunday_Third.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Sunday_Third.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Sunday_Third.Location = new System.Drawing.Point(357, 3);
+            this.Sunday_Third.Location = new System.Drawing.Point(357, 2);
+            this.Sunday_Third.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sunday_Third.Name = "Sunday_Third";
             this.Sunday_Third.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Sunday_Third.Size = new System.Drawing.Size(81, 60);
@@ -203,7 +209,8 @@
             this.Sunday_Fourth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Sunday_Fourth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Sunday_Fourth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Sunday_Fourth.Location = new System.Drawing.Point(270, 3);
+            this.Sunday_Fourth.Location = new System.Drawing.Point(270, 2);
+            this.Sunday_Fourth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sunday_Fourth.Name = "Sunday_Fourth";
             this.Sunday_Fourth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Sunday_Fourth.Size = new System.Drawing.Size(81, 60);
@@ -223,7 +230,8 @@
             this.Sunday_Fifth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Sunday_Fifth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Sunday_Fifth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Sunday_Fifth.Location = new System.Drawing.Point(183, 3);
+            this.Sunday_Fifth.Location = new System.Drawing.Point(183, 2);
+            this.Sunday_Fifth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sunday_Fifth.Name = "Sunday_Fifth";
             this.Sunday_Fifth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Sunday_Fifth.Size = new System.Drawing.Size(81, 60);
@@ -243,7 +251,8 @@
             this.Sunday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Sunday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Sunday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Sunday_Sixth.Location = new System.Drawing.Point(96, 3);
+            this.Sunday_Sixth.Location = new System.Drawing.Point(96, 2);
+            this.Sunday_Sixth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sunday_Sixth.Name = "Sunday_Sixth";
             this.Sunday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Sunday_Sixth.Size = new System.Drawing.Size(81, 60);
@@ -263,7 +272,8 @@
             this.Sunday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Sunday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Sunday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Sunday_Seventh.Location = new System.Drawing.Point(9, 3);
+            this.Sunday_Seventh.Location = new System.Drawing.Point(9, 2);
+            this.Sunday_Seventh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sunday_Seventh.Name = "Sunday_Seventh";
             this.Sunday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Sunday_Seventh.Size = new System.Drawing.Size(81, 60);
@@ -277,10 +287,12 @@
             // 
             this.Monday.Controls.Add(this.flowLayoutPanel3);
             this.Monday.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Monday.Location = new System.Drawing.Point(0, 85);
+            this.Monday.Location = new System.Drawing.Point(0, 84);
+            this.Monday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Monday.Name = "Monday";
+            this.Monday.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Monday.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Monday.Size = new System.Drawing.Size(693, 85);
+            this.Monday.Size = new System.Drawing.Size(693, 84);
             this.Monday.TabIndex = 1;
             this.Monday.TabStop = false;
             // 
@@ -296,17 +308,18 @@
             this.flowLayoutPanel3.Controls.Add(this.Monday_Seventh);
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 15);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(687, 66);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(687, 67);
             this.flowLayoutPanel3.TabIndex = 0;
             // 
             // Monday_label
             // 
             this.Monday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Monday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
-            this.Monday_label.Location = new System.Drawing.Point(618, 3);
-            this.Monday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Monday_label.Location = new System.Drawing.Point(618, 2);
+            this.Monday_label.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Monday_label.Name = "Monday_label";
             this.Monday_label.Size = new System.Drawing.Size(66, 60);
             this.Monday_label.TabIndex = 0;
@@ -323,7 +336,8 @@
             this.Monday_First.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Monday_First.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Monday_First.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Monday_First.Location = new System.Drawing.Point(531, 3);
+            this.Monday_First.Location = new System.Drawing.Point(531, 2);
+            this.Monday_First.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Monday_First.Name = "Monday_First";
             this.Monday_First.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Monday_First.Size = new System.Drawing.Size(81, 60);
@@ -343,7 +357,8 @@
             this.Monday_Second.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Monday_Second.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Monday_Second.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Monday_Second.Location = new System.Drawing.Point(444, 3);
+            this.Monday_Second.Location = new System.Drawing.Point(444, 2);
+            this.Monday_Second.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Monday_Second.Name = "Monday_Second";
             this.Monday_Second.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Monday_Second.Size = new System.Drawing.Size(81, 60);
@@ -363,7 +378,8 @@
             this.Monday_Third.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Monday_Third.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Monday_Third.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Monday_Third.Location = new System.Drawing.Point(357, 3);
+            this.Monday_Third.Location = new System.Drawing.Point(357, 2);
+            this.Monday_Third.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Monday_Third.Name = "Monday_Third";
             this.Monday_Third.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Monday_Third.Size = new System.Drawing.Size(81, 60);
@@ -383,7 +399,8 @@
             this.Monday_Fourth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Monday_Fourth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Monday_Fourth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Monday_Fourth.Location = new System.Drawing.Point(270, 3);
+            this.Monday_Fourth.Location = new System.Drawing.Point(270, 2);
+            this.Monday_Fourth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Monday_Fourth.Name = "Monday_Fourth";
             this.Monday_Fourth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Monday_Fourth.Size = new System.Drawing.Size(81, 60);
@@ -403,7 +420,8 @@
             this.Monday_Fifth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Monday_Fifth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Monday_Fifth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Monday_Fifth.Location = new System.Drawing.Point(183, 3);
+            this.Monday_Fifth.Location = new System.Drawing.Point(183, 2);
+            this.Monday_Fifth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Monday_Fifth.Name = "Monday_Fifth";
             this.Monday_Fifth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Monday_Fifth.Size = new System.Drawing.Size(81, 60);
@@ -423,7 +441,8 @@
             this.Monday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Monday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Monday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Monday_Sixth.Location = new System.Drawing.Point(96, 3);
+            this.Monday_Sixth.Location = new System.Drawing.Point(96, 2);
+            this.Monday_Sixth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Monday_Sixth.Name = "Monday_Sixth";
             this.Monday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Monday_Sixth.Size = new System.Drawing.Size(81, 60);
@@ -443,7 +462,8 @@
             this.Monday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Monday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Monday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Monday_Seventh.Location = new System.Drawing.Point(9, 3);
+            this.Monday_Seventh.Location = new System.Drawing.Point(9, 2);
+            this.Monday_Seventh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Monday_Seventh.Name = "Monday_Seventh";
             this.Monday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Monday_Seventh.Size = new System.Drawing.Size(81, 60);
@@ -457,10 +477,12 @@
             // 
             this.Tuesday.Controls.Add(this.flowLayoutPanel4);
             this.Tuesday.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Tuesday.Location = new System.Drawing.Point(0, 170);
+            this.Tuesday.Location = new System.Drawing.Point(0, 168);
+            this.Tuesday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tuesday.Name = "Tuesday";
+            this.Tuesday.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tuesday.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Tuesday.Size = new System.Drawing.Size(693, 85);
+            this.Tuesday.Size = new System.Drawing.Size(693, 84);
             this.Tuesday.TabIndex = 2;
             this.Tuesday.TabStop = false;
             // 
@@ -476,17 +498,18 @@
             this.flowLayoutPanel4.Controls.Add(this.Tuesday_Seventh);
             this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 15);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(687, 66);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(687, 67);
             this.flowLayoutPanel4.TabIndex = 0;
             // 
             // Tuesday_label
             // 
             this.Tuesday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tuesday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
-            this.Tuesday_label.Location = new System.Drawing.Point(618, 3);
-            this.Tuesday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Tuesday_label.Location = new System.Drawing.Point(618, 2);
+            this.Tuesday_label.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tuesday_label.Name = "Tuesday_label";
             this.Tuesday_label.Size = new System.Drawing.Size(66, 60);
             this.Tuesday_label.TabIndex = 0;
@@ -503,7 +526,8 @@
             this.Tuesday_First.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Tuesday_First.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Tuesday_First.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Tuesday_First.Location = new System.Drawing.Point(531, 3);
+            this.Tuesday_First.Location = new System.Drawing.Point(531, 2);
+            this.Tuesday_First.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tuesday_First.Name = "Tuesday_First";
             this.Tuesday_First.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Tuesday_First.Size = new System.Drawing.Size(81, 60);
@@ -523,7 +547,8 @@
             this.Tuesday_Second.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Tuesday_Second.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Tuesday_Second.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Tuesday_Second.Location = new System.Drawing.Point(444, 3);
+            this.Tuesday_Second.Location = new System.Drawing.Point(444, 2);
+            this.Tuesday_Second.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tuesday_Second.Name = "Tuesday_Second";
             this.Tuesday_Second.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Tuesday_Second.Size = new System.Drawing.Size(81, 60);
@@ -543,7 +568,8 @@
             this.Tuesday_Third.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Tuesday_Third.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Tuesday_Third.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Tuesday_Third.Location = new System.Drawing.Point(357, 3);
+            this.Tuesday_Third.Location = new System.Drawing.Point(357, 2);
+            this.Tuesday_Third.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tuesday_Third.Name = "Tuesday_Third";
             this.Tuesday_Third.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Tuesday_Third.Size = new System.Drawing.Size(81, 60);
@@ -563,7 +589,8 @@
             this.Tuesday_Fourth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Tuesday_Fourth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Tuesday_Fourth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Tuesday_Fourth.Location = new System.Drawing.Point(270, 3);
+            this.Tuesday_Fourth.Location = new System.Drawing.Point(270, 2);
+            this.Tuesday_Fourth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tuesday_Fourth.Name = "Tuesday_Fourth";
             this.Tuesday_Fourth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Tuesday_Fourth.Size = new System.Drawing.Size(81, 60);
@@ -583,7 +610,8 @@
             this.Tuesday_Fifth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Tuesday_Fifth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Tuesday_Fifth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Tuesday_Fifth.Location = new System.Drawing.Point(183, 3);
+            this.Tuesday_Fifth.Location = new System.Drawing.Point(183, 2);
+            this.Tuesday_Fifth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tuesday_Fifth.Name = "Tuesday_Fifth";
             this.Tuesday_Fifth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Tuesday_Fifth.Size = new System.Drawing.Size(81, 60);
@@ -603,7 +631,8 @@
             this.Tuesday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Tuesday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Tuesday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Tuesday_Sixth.Location = new System.Drawing.Point(96, 3);
+            this.Tuesday_Sixth.Location = new System.Drawing.Point(96, 2);
+            this.Tuesday_Sixth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tuesday_Sixth.Name = "Tuesday_Sixth";
             this.Tuesday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Tuesday_Sixth.Size = new System.Drawing.Size(81, 60);
@@ -623,7 +652,8 @@
             this.Tuesday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Tuesday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Tuesday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Tuesday_Seventh.Location = new System.Drawing.Point(9, 3);
+            this.Tuesday_Seventh.Location = new System.Drawing.Point(9, 2);
+            this.Tuesday_Seventh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tuesday_Seventh.Name = "Tuesday_Seventh";
             this.Tuesday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Tuesday_Seventh.Size = new System.Drawing.Size(81, 60);
@@ -637,10 +667,12 @@
             // 
             this.Wednesday.Controls.Add(this.flowLayoutPanel5);
             this.Wednesday.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Wednesday.Location = new System.Drawing.Point(0, 255);
+            this.Wednesday.Location = new System.Drawing.Point(0, 252);
+            this.Wednesday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Wednesday.Name = "Wednesday";
+            this.Wednesday.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Wednesday.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Wednesday.Size = new System.Drawing.Size(693, 85);
+            this.Wednesday.Size = new System.Drawing.Size(693, 84);
             this.Wednesday.TabIndex = 3;
             this.Wednesday.TabStop = false;
             // 
@@ -656,17 +688,18 @@
             this.flowLayoutPanel5.Controls.Add(this.Wednesday_Seventh);
             this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 15);
+            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(687, 66);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(687, 67);
             this.flowLayoutPanel5.TabIndex = 0;
             // 
             // Wednesday_label
             // 
             this.Wednesday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Wednesday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
-            this.Wednesday_label.Location = new System.Drawing.Point(618, 3);
-            this.Wednesday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Wednesday_label.Location = new System.Drawing.Point(618, 2);
+            this.Wednesday_label.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Wednesday_label.Name = "Wednesday_label";
             this.Wednesday_label.Size = new System.Drawing.Size(66, 60);
             this.Wednesday_label.TabIndex = 0;
@@ -683,7 +716,8 @@
             this.Wednesday_First.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Wednesday_First.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Wednesday_First.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Wednesday_First.Location = new System.Drawing.Point(531, 3);
+            this.Wednesday_First.Location = new System.Drawing.Point(531, 2);
+            this.Wednesday_First.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Wednesday_First.Name = "Wednesday_First";
             this.Wednesday_First.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Wednesday_First.Size = new System.Drawing.Size(81, 60);
@@ -703,7 +737,8 @@
             this.Wednesday_Second.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Wednesday_Second.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Wednesday_Second.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Wednesday_Second.Location = new System.Drawing.Point(444, 3);
+            this.Wednesday_Second.Location = new System.Drawing.Point(444, 2);
+            this.Wednesday_Second.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Wednesday_Second.Name = "Wednesday_Second";
             this.Wednesday_Second.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Wednesday_Second.Size = new System.Drawing.Size(81, 60);
@@ -723,7 +758,8 @@
             this.Wednesday_Third.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Wednesday_Third.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Wednesday_Third.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Wednesday_Third.Location = new System.Drawing.Point(357, 3);
+            this.Wednesday_Third.Location = new System.Drawing.Point(357, 2);
+            this.Wednesday_Third.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Wednesday_Third.Name = "Wednesday_Third";
             this.Wednesday_Third.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Wednesday_Third.Size = new System.Drawing.Size(81, 60);
@@ -743,7 +779,8 @@
             this.Wednesday_Fourth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Wednesday_Fourth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Wednesday_Fourth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Wednesday_Fourth.Location = new System.Drawing.Point(270, 3);
+            this.Wednesday_Fourth.Location = new System.Drawing.Point(270, 2);
+            this.Wednesday_Fourth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Wednesday_Fourth.Name = "Wednesday_Fourth";
             this.Wednesday_Fourth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Wednesday_Fourth.Size = new System.Drawing.Size(81, 60);
@@ -763,7 +800,8 @@
             this.Wednesday_Fifth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Wednesday_Fifth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Wednesday_Fifth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Wednesday_Fifth.Location = new System.Drawing.Point(183, 3);
+            this.Wednesday_Fifth.Location = new System.Drawing.Point(183, 2);
+            this.Wednesday_Fifth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Wednesday_Fifth.Name = "Wednesday_Fifth";
             this.Wednesday_Fifth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Wednesday_Fifth.Size = new System.Drawing.Size(81, 60);
@@ -783,7 +821,8 @@
             this.Wednesday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Wednesday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Wednesday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Wednesday_Sixth.Location = new System.Drawing.Point(96, 3);
+            this.Wednesday_Sixth.Location = new System.Drawing.Point(96, 2);
+            this.Wednesday_Sixth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Wednesday_Sixth.Name = "Wednesday_Sixth";
             this.Wednesday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Wednesday_Sixth.Size = new System.Drawing.Size(81, 60);
@@ -803,7 +842,8 @@
             this.Wednesday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Wednesday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Wednesday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Wednesday_Seventh.Location = new System.Drawing.Point(9, 3);
+            this.Wednesday_Seventh.Location = new System.Drawing.Point(9, 2);
+            this.Wednesday_Seventh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Wednesday_Seventh.Name = "Wednesday_Seventh";
             this.Wednesday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Wednesday_Seventh.Size = new System.Drawing.Size(81, 60);
@@ -818,10 +858,12 @@
             this.Thursday.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Thursday.Controls.Add(this.flowLayoutPanel6);
             this.Thursday.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Thursday.Location = new System.Drawing.Point(0, 340);
+            this.Thursday.Location = new System.Drawing.Point(0, 336);
+            this.Thursday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Thursday.Name = "Thursday";
+            this.Thursday.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Thursday.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Thursday.Size = new System.Drawing.Size(693, 85);
+            this.Thursday.Size = new System.Drawing.Size(693, 84);
             this.Thursday.TabIndex = 4;
             this.Thursday.TabStop = false;
             // 
@@ -837,17 +879,18 @@
             this.flowLayoutPanel6.Controls.Add(this.Thursday_Seventh);
             this.flowLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 15);
+            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(687, 66);
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(687, 67);
             this.flowLayoutPanel6.TabIndex = 0;
             // 
             // Thursday_label
             // 
             this.Thursday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Thursday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
-            this.Thursday_label.Location = new System.Drawing.Point(618, 3);
-            this.Thursday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Thursday_label.Location = new System.Drawing.Point(618, 2);
+            this.Thursday_label.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Thursday_label.Name = "Thursday_label";
             this.Thursday_label.Size = new System.Drawing.Size(66, 60);
             this.Thursday_label.TabIndex = 0;
@@ -864,7 +907,8 @@
             this.Thursday_First.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Thursday_First.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Thursday_First.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Thursday_First.Location = new System.Drawing.Point(531, 3);
+            this.Thursday_First.Location = new System.Drawing.Point(531, 2);
+            this.Thursday_First.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Thursday_First.Name = "Thursday_First";
             this.Thursday_First.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Thursday_First.Size = new System.Drawing.Size(81, 60);
@@ -884,7 +928,8 @@
             this.Thursday_Second.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Thursday_Second.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Thursday_Second.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Thursday_Second.Location = new System.Drawing.Point(444, 3);
+            this.Thursday_Second.Location = new System.Drawing.Point(444, 2);
+            this.Thursday_Second.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Thursday_Second.Name = "Thursday_Second";
             this.Thursday_Second.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Thursday_Second.Size = new System.Drawing.Size(81, 60);
@@ -904,7 +949,8 @@
             this.Thursday_Third.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Thursday_Third.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Thursday_Third.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Thursday_Third.Location = new System.Drawing.Point(357, 3);
+            this.Thursday_Third.Location = new System.Drawing.Point(357, 2);
+            this.Thursday_Third.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Thursday_Third.Name = "Thursday_Third";
             this.Thursday_Third.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Thursday_Third.Size = new System.Drawing.Size(81, 60);
@@ -924,7 +970,8 @@
             this.Thursday_Fourth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Thursday_Fourth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Thursday_Fourth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Thursday_Fourth.Location = new System.Drawing.Point(270, 3);
+            this.Thursday_Fourth.Location = new System.Drawing.Point(270, 2);
+            this.Thursday_Fourth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Thursday_Fourth.Name = "Thursday_Fourth";
             this.Thursday_Fourth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Thursday_Fourth.Size = new System.Drawing.Size(81, 60);
@@ -944,7 +991,8 @@
             this.Thursday_Fifth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Thursday_Fifth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Thursday_Fifth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Thursday_Fifth.Location = new System.Drawing.Point(183, 3);
+            this.Thursday_Fifth.Location = new System.Drawing.Point(183, 2);
+            this.Thursday_Fifth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Thursday_Fifth.Name = "Thursday_Fifth";
             this.Thursday_Fifth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Thursday_Fifth.Size = new System.Drawing.Size(81, 60);
@@ -964,7 +1012,8 @@
             this.Thursday_Sixth.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Thursday_Sixth.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Thursday_Sixth.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Thursday_Sixth.Location = new System.Drawing.Point(96, 3);
+            this.Thursday_Sixth.Location = new System.Drawing.Point(96, 2);
+            this.Thursday_Sixth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Thursday_Sixth.Name = "Thursday_Sixth";
             this.Thursday_Sixth.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Thursday_Sixth.Size = new System.Drawing.Size(81, 60);
@@ -984,7 +1033,8 @@
             this.Thursday_Seventh.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Thursday_Seventh.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Thursday_Seventh.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Thursday_Seventh.Location = new System.Drawing.Point(9, 3);
+            this.Thursday_Seventh.Location = new System.Drawing.Point(9, 2);
+            this.Thursday_Seventh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Thursday_Seventh.Name = "Thursday_Seventh";
             this.Thursday_Seventh.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Thursday_Seventh.Size = new System.Drawing.Size(81, 60);
@@ -1003,8 +1053,9 @@
             this.panel1.Controls.Add(this.Sunday);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(693, 458);
+            this.panel1.Size = new System.Drawing.Size(693, 425);
             this.panel1.TabIndex = 5;
             // 
             // Schedule_Show_v0
@@ -1013,8 +1064,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Schedule_Show_v0";
-            this.Size = new System.Drawing.Size(693, 458);
+            this.Size = new System.Drawing.Size(693, 425);
             this.Sunday.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.Monday.ResumeLayout(false);

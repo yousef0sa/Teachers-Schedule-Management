@@ -15,6 +15,8 @@ namespace Teachers__Schedule_Management.Home
         public Home_Page()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
+
         }
     }
 }

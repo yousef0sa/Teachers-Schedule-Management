@@ -134,7 +134,7 @@
             this.Sunday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Sunday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
             this.Sunday_label.Location = new System.Drawing.Point(618, 3);
-            this.Sunday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Sunday_label.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.Sunday_label.Name = "Sunday_label";
             this.Sunday_label.Size = new System.Drawing.Size(66, 60);
             this.Sunday_label.TabIndex = 8;
@@ -251,7 +251,7 @@
             this.Monday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Monday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
             this.Monday_label.Location = new System.Drawing.Point(618, 3);
-            this.Monday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Monday_label.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.Monday_label.Name = "Monday_label";
             this.Monday_label.Size = new System.Drawing.Size(66, 60);
             this.Monday_label.TabIndex = 9;
@@ -368,7 +368,7 @@
             this.Tuesday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tuesday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
             this.Tuesday_label.Location = new System.Drawing.Point(618, 3);
-            this.Tuesday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Tuesday_label.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.Tuesday_label.Name = "Tuesday_label";
             this.Tuesday_label.Size = new System.Drawing.Size(66, 60);
             this.Tuesday_label.TabIndex = 9;
@@ -485,7 +485,7 @@
             this.Wednesday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Wednesday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
             this.Wednesday_label.Location = new System.Drawing.Point(618, 3);
-            this.Wednesday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Wednesday_label.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.Wednesday_label.Name = "Wednesday_label";
             this.Wednesday_label.Size = new System.Drawing.Size(66, 60);
             this.Wednesday_label.TabIndex = 9;
@@ -602,7 +602,7 @@
             this.Thursday_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Thursday_label.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F, System.Drawing.FontStyle.Underline);
             this.Thursday_label.Location = new System.Drawing.Point(618, 3);
-            this.Thursday_label.Margin = new System.Windows.Forms.Padding(3);
+            this.Thursday_label.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.Thursday_label.Name = "Thursday_label";
             this.Thursday_label.Size = new System.Drawing.Size(66, 60);
             this.Thursday_label.TabIndex = 9;
@@ -693,7 +693,7 @@
             this.Main_UserControl_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Main_UserControl_panel.Location = new System.Drawing.Point(0, 0);
             this.Main_UserControl_panel.Name = "Main_UserControl_panel";
-            this.Main_UserControl_panel.Size = new System.Drawing.Size(693, 513);
+            this.Main_UserControl_panel.Size = new System.Drawing.Size(693, 471);
             this.Main_UserControl_panel.TabIndex = 0;
             // 
             // panel1
@@ -704,9 +704,9 @@
             this.panel1.Controls.Add(this.Monday);
             this.panel1.Controls.Add(this.Sunday);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 49);
+            this.panel1.Location = new System.Drawing.Point(0, 43);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(693, 464);
+            this.panel1.Size = new System.Drawing.Size(693, 428);
             this.panel1.TabIndex = 6;
             // 
             // panel2
@@ -718,7 +718,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(693, 49);
+            this.panel2.Size = new System.Drawing.Size(693, 43);
             this.panel2.TabIndex = 3;
             // 
             // Select_comboBox
@@ -726,12 +726,11 @@
             this.Select_comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Select_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Select_comboBox.Font = new System.Drawing.Font("Tahoma", 12F);
             this.Select_comboBox.FormattingEnabled = true;
-            this.Select_comboBox.Location = new System.Drawing.Point(365, 11);
+            this.Select_comboBox.Location = new System.Drawing.Point(365, 15);
             this.Select_comboBox.Name = "Select_comboBox";
             this.Select_comboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Select_comboBox.Size = new System.Drawing.Size(252, 27);
+            this.Select_comboBox.Size = new System.Drawing.Size(252, 21);
             this.Select_comboBox.TabIndex = 5;
             this.Select_comboBox.DropDown += new System.EventHandler(this.Select_comboBox_DropDown);
             this.Select_comboBox.SelectedIndexChanged += new System.EventHandler(this.Select_comboBox_SelectedIndexChanged);
@@ -740,9 +739,9 @@
             // 
             this.Delete_table_button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.Delete_table_button1.AutoSize = true;
             this.Delete_table_button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Delete_table_button1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.Delete_table_button1.Location = new System.Drawing.Point(12, 9);
+            this.Delete_table_button1.Location = new System.Drawing.Point(12, 6);
             this.Delete_table_button1.Name = "Delete_table_button1";
             this.Delete_table_button1.Size = new System.Drawing.Size(75, 30);
             this.Delete_table_button1.TabIndex = 4;
@@ -755,8 +754,7 @@
             this.Save_edit_button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Save_edit_button.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Save_edit_button.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.Save_edit_button.Location = new System.Drawing.Point(99, 9);
+            this.Save_edit_button.Location = new System.Drawing.Point(99, 6);
             this.Save_edit_button.Name = "Save_edit_button";
             this.Save_edit_button.Size = new System.Drawing.Size(75, 30);
             this.Save_edit_button.TabIndex = 3;
@@ -769,20 +767,19 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label2.Location = new System.Drawing.Point(623, 17);
+            this.label2.Location = new System.Drawing.Point(623, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 15);
+            this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "اسم المعلم:";
             // 
             // Schedule_Edit_Delete_v0
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoSize = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Main_UserControl_panel);
             this.Name = "Schedule_Edit_Delete_v0";
-            this.Size = new System.Drawing.Size(693, 513);
+            this.Size = new System.Drawing.Size(693, 471);
             this.Sunday.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.Monday.ResumeLayout(false);

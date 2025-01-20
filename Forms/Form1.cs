@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using Teachers__Schedule_Management.Class;
 using Teachers__Schedule_Management.Forms;
@@ -123,6 +124,19 @@ namespace Teachers__Schedule_Management
                 MessageBox.Show("Deletion canceled.", "Canceled", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+        }
+
+        private void foreverMaximize1_Click(object sender, EventArgs e)
+        {
+            //resiz control
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                Page1_panel.Font = new Font("Tahoma", 18);
+            }
+            else
+            {
+                Page1_panel.Font = new Font("Tahoma", 10);
+            }
         }
     }
 }
