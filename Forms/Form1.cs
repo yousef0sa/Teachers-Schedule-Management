@@ -61,6 +61,13 @@ namespace Teachers__Schedule_Management
                     if (dataLoader.DeleteReserveRecord() == true)
                     {
                         MessageBox.Show("Reserve record deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+                        // Load the Schedule to Page1_panel
+                        Page1_panel.Controls.Clear();
+                        Schedule_Show_v0 schedule = new Schedule_Show_v0();
+                        Page1_panel.Controls.Add(schedule);
                     }
                 }
                 catch (Exception ex)
@@ -79,6 +86,33 @@ namespace Teachers__Schedule_Management
             Page1_panel.Controls.Clear();
             Home_Page home_page = new Home_Page();
             Page1_panel.Controls.Add(home_page);
+        }
+
+        private void Delete_monthly_log_Button_Click(object sender, EventArgs e)
+        {
+            // Confirm deletion
+            if (MessageBox.Show("Are you sure you want to delete the monthly log?", "Delete Data", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                try
+                {
+                    // Create an instance of TeacherDataLoader
+                    TeacherDataLoader dataLoader = new TeacherDataLoader();
+                    // Call DeleteMonthlyLog method
+                    if (dataLoader.DeleteMonthlyLog() == true)
+                    {
+                        MessageBox.Show("Monthly log deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Deletion canceled.", "Canceled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
     }
 }

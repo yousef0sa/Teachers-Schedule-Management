@@ -31,21 +31,24 @@
             this.Main_panel = new System.Windows.Forms.Panel();
             this.Page1_panel = new System.Windows.Forms.Panel();
             this.Sid_panel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.Add_schedule_button = new ReaLTaiizor.Controls.HopeButton();
             this.Edit_Delete_button = new ReaLTaiizor.Controls.HopeButton();
-            this.Program_Version_Label = new ReaLTaiizor.Controls.NightLabel();
             this.Delete_record_button = new ReaLTaiizor.Controls.HopeButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Program_Version_Label = new ReaLTaiizor.Controls.NightLabel();
             this.button_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.Home_Button = new ReaLTaiizor.Controls.HopeButton();
             this.Schedule_button = new ReaLTaiizor.Controls.HopeButton();
             this.Record_button = new ReaLTaiizor.Controls.HopeButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.Delete_monthly_log_Button = new ReaLTaiizor.Controls.HopeButton();
             this.Main_panel.SuspendLayout();
             this.Sid_panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.button_flowLayoutPanel.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Main_panel
@@ -75,6 +78,7 @@
             this.Sid_panel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Sid_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Sid_panel.Controls.Add(this.flowLayoutPanel2);
             this.Sid_panel.Controls.Add(this.flowLayoutPanel1);
             this.Sid_panel.Controls.Add(this.panel1);
             this.Sid_panel.Controls.Add(this.button_flowLayoutPanel);
@@ -83,14 +87,15 @@
             this.Sid_panel.Size = new System.Drawing.Size(128, 529);
             this.Sid_panel.TabIndex = 0;
             // 
-            // panel1
+            // flowLayoutPanel1
             // 
-            this.panel1.Controls.Add(this.Program_Version_Label);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 503);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(126, 24);
-            this.panel1.TabIndex = 1;
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Controls.Add(this.Add_schedule_button);
+            this.flowLayoutPanel1.Controls.Add(this.Edit_Delete_button);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 307);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(130, 99);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // Add_schedule_button
             // 
@@ -134,6 +139,36 @@
             this.Edit_Delete_button.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             this.Edit_Delete_button.Click += new System.EventHandler(this.Edit_Delete_button_Click);
             // 
+            // Delete_record_button
+            // 
+            this.Delete_record_button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Delete_record_button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Danger;
+            this.Delete_record_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Delete_record_button.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Delete_record_button.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            this.Delete_record_button.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Delete_record_button.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Delete_record_button.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Delete_record_button.Location = new System.Drawing.Point(3, 3);
+            this.Delete_record_button.Name = "Delete_record_button";
+            this.Delete_record_button.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            this.Delete_record_button.Size = new System.Drawing.Size(123, 40);
+            this.Delete_record_button.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Delete_record_button.TabIndex = 5;
+            this.Delete_record_button.Text = "حذف سجل الاحتياط";
+            this.Delete_record_button.TextColor = System.Drawing.Color.White;
+            this.Delete_record_button.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.Delete_record_button.Click += new System.EventHandler(this.Delete_record_button_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.Program_Version_Label);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 503);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(126, 24);
+            this.panel1.TabIndex = 1;
+            // 
             // Program_Version_Label
             // 
             this.Program_Version_Label.AutoSize = true;
@@ -146,27 +181,6 @@
             this.Program_Version_Label.TabIndex = 4;
             this.Program_Version_Label.Text = "Version: 0.0.0.0";
             // 
-            // Delete_record_button
-            // 
-            this.Delete_record_button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.Delete_record_button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Danger;
-            this.Delete_record_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Delete_record_button.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Delete_record_button.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
-            this.Delete_record_button.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Delete_record_button.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Delete_record_button.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Delete_record_button.Location = new System.Drawing.Point(3, 100);
-            this.Delete_record_button.Name = "Delete_record_button";
-            this.Delete_record_button.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
-            this.Delete_record_button.Size = new System.Drawing.Size(123, 40);
-            this.Delete_record_button.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Delete_record_button.TabIndex = 5;
-            this.Delete_record_button.Text = "حذف سجل الاحتياط";
-            this.Delete_record_button.TextColor = System.Drawing.Color.White;
-            this.Delete_record_button.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            this.Delete_record_button.Click += new System.EventHandler(this.Delete_record_button_Click);
-            // 
             // button_flowLayoutPanel
             // 
             this.button_flowLayoutPanel.Controls.Add(this.Home_Button);
@@ -175,7 +189,7 @@
             this.button_flowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_flowLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.button_flowLayoutPanel.Name = "button_flowLayoutPanel";
-            this.button_flowLayoutPanel.Size = new System.Drawing.Size(126, 354);
+            this.button_flowLayoutPanel.Size = new System.Drawing.Size(126, 304);
             this.button_flowLayoutPanel.TabIndex = 0;
             // 
             // Home_Button
@@ -242,16 +256,36 @@
             this.Record_button.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             this.Record_button.Click += new System.EventHandler(this.Record_button_Click);
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanel2
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.Controls.Add(this.Add_schedule_button);
-            this.flowLayoutPanel1.Controls.Add(this.Edit_Delete_button);
-            this.flowLayoutPanel1.Controls.Add(this.Delete_record_button);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 357);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(130, 147);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel2.Controls.Add(this.Delete_record_button);
+            this.flowLayoutPanel2.Controls.Add(this.Delete_monthly_log_Button);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 409);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(130, 95);
+            this.flowLayoutPanel2.TabIndex = 6;
+            // 
+            // Delete_monthly_log_Button
+            // 
+            this.Delete_monthly_log_Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Delete_monthly_log_Button.ButtonType = ReaLTaiizor.Util.HopeButtonType.Danger;
+            this.Delete_monthly_log_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Delete_monthly_log_Button.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            this.Delete_monthly_log_Button.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            this.Delete_monthly_log_Button.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Delete_monthly_log_Button.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Delete_monthly_log_Button.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Delete_monthly_log_Button.Location = new System.Drawing.Point(3, 49);
+            this.Delete_monthly_log_Button.Name = "Delete_monthly_log_Button";
+            this.Delete_monthly_log_Button.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            this.Delete_monthly_log_Button.Size = new System.Drawing.Size(123, 40);
+            this.Delete_monthly_log_Button.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Delete_monthly_log_Button.TabIndex = 6;
+            this.Delete_monthly_log_Button.Text = "حذف السجل الشهري";
+            this.Delete_monthly_log_Button.TextColor = System.Drawing.Color.White;
+            this.Delete_monthly_log_Button.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.Delete_monthly_log_Button.Click += new System.EventHandler(this.Delete_monthly_log_Button_Click);
             // 
             // Form1
             // 
@@ -263,10 +297,11 @@
             this.ShowIcon = false;
             this.Main_panel.ResumeLayout(false);
             this.Sid_panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.button_flowLayoutPanel.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -286,6 +321,8 @@
         private ReaLTaiizor.Controls.HopeButton Add_schedule_button;
         private ReaLTaiizor.Controls.HopeButton Edit_Delete_button;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private ReaLTaiizor.Controls.HopeButton Delete_monthly_log_Button;
     }
 }
 

@@ -1,10 +1,7 @@
 ﻿using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Teachers__Schedule_Management.Class;
 
@@ -124,6 +121,17 @@ namespace Teachers__Schedule_Management.User_Control
 
             // Delete the reserve data file
             File.Delete(ReserveScheduleFile);
+            return true;
+        }
+
+        public bool DeleteMonthlyLog()
+        {
+            if (!File.Exists("log_Reserve.json"))
+            {
+                ShowErrorMessage("No monthly log to delete.", "Information");
+                return false;
+            }
+            File.Delete("log_Reserve.json");
             return true;
         }
     }
