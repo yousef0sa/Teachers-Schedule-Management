@@ -11,6 +11,7 @@ namespace Teachers__Schedule_Management.User_Control
 {
     public partial class Schedule_Add_v0 : UserControl
     {
+        private static readonly string MainScheduleFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scheduleData.json");
         public Schedule_Add_v0()
         {
             InitializeComponent();
@@ -117,9 +118,9 @@ namespace Teachers__Schedule_Management.User_Control
 
             List<object> scheduleList = new List<object>();
 
-            if (File.Exists("scheduleData.json"))
+            if (File.Exists(MainScheduleFile))
             {
-                string existingJson = File.ReadAllText("scheduleData.json");
+                string existingJson = File.ReadAllText(MainScheduleFile);
 
                 // Check if the existing JSON is an array or an object
                 if (existingJson.Trim().StartsWith("["))
@@ -153,7 +154,7 @@ namespace Teachers__Schedule_Management.User_Control
             scheduleList.Add(newScheduleData);
 
             string newJson = JsonConvert.SerializeObject(scheduleList, Formatting.Indented);
-            File.WriteAllText("scheduleData.json", newJson);
+            File.WriteAllText(MainScheduleFile, newJson);
             MessageBox.Show("Data saved successfully!");
         }
         private void ResetButtonColors(Control parent)

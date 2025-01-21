@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,8 +10,9 @@ namespace Teachers__Schedule_Management.User_Control
 {
     public class TeacherDataLoader
     {
-        private const string MainScheduleFile = "scheduleData.json";
-        private const string ReserveScheduleFile = "schedule_Reserve_Data.json";
+        private static readonly string MainScheduleFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scheduleData.json");
+        private static readonly string ReserveScheduleFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "schedule_Reserve_Data.json");
+        private static readonly string LogFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log_Reserve.json");
 
         public List<int> LoadAvailableTeachers()
         {
@@ -126,12 +128,12 @@ namespace Teachers__Schedule_Management.User_Control
 
         public bool DeleteMonthlyLog()
         {
-            if (!File.Exists("log_Reserve.json"))
+            if (!File.Exists(LogFile))
             {
                 ShowErrorMessage("No monthly log to delete.", "Information");
                 return false;
             }
-            File.Delete("log_Reserve.json");
+            File.Delete(LogFile);
             return true;
         }
     }

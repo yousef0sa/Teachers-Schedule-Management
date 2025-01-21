@@ -9,9 +9,9 @@ namespace Teachers__Schedule_Management.User_Control
 {
     public partial class Teacher_Selection_Form : Form
     {
-        private const string MainScheduleFile = "scheduleData.json";
-        private const string ReserveScheduleFile = "schedule_Reserve_Data.json";
-        private const string LogFilePath = "log_Reserve.json";
+        private static readonly string MainScheduleFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scheduleData.json");
+        private static readonly string ReserveScheduleFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "schedule_Reserve_Data.json");
+        private static readonly string LogFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log_Reserve.json");
 
         public string ButtonName { get; set; }
 
@@ -177,12 +177,12 @@ namespace Teachers__Schedule_Management.User_Control
 
         private int GetRepeatCount(string teacherName, string buttonName)
         {
-            if (!File.Exists(LogFilePath))
+            if (!File.Exists(LogFile))
                 return 0;
 
             try
             {
-                string logJson = File.ReadAllText(LogFilePath);
+                string logJson = File.ReadAllText(LogFile);
                 var logData = JsonConvert.DeserializeObject<Dictionary<string, List<TeacherData>>>(logJson);
                 if (logData == null)
                     return 0;

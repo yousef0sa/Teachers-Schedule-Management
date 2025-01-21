@@ -10,6 +10,7 @@ namespace Teachers__Schedule_Management.User_Control
 {
     public partial class Teacher_Selection_data : UserControl
     {
+        private static readonly string ReserveScheduleFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "schedule_Reserve_Data.json");
         public string Teacher_name
         {
             get { return this.name_textBox.Text; }
@@ -60,9 +61,8 @@ namespace Teachers__Schedule_Management.User_Control
         private void Reserve_button_Click(object sender, EventArgs e)
         {
             string teacherName = this.name_textBox.Text;
-            string jsonFilePath = "schedule_Reserve_Data.json";
 
-            List<TeacherData> teachers = LoadTeacherData(jsonFilePath);
+            List<TeacherData> teachers = LoadTeacherData(ReserveScheduleFile);
 
             var teacher = teachers.FirstOrDefault(t => t.TeacherName == teacherName);
             string buttonName = ((Teacher_Selection_Form)this.ParentForm).ButtonName;
@@ -79,7 +79,7 @@ namespace Teachers__Schedule_Management.User_Control
                 this.class_textBox.ReadOnly = true;
             }
 
-            SaveTeacherData(jsonFilePath, teachers);
+            SaveTeacherData(ReserveScheduleFile, teachers);
             UpdateUI(isRemoved);
         }
 
@@ -152,11 +152,10 @@ namespace Teachers__Schedule_Management.User_Control
 
         public void UpdateButtonColor(string buttonName)
         {
-            string jsonFilePath = "schedule_Reserve_Data.json";
 
-            if (File.Exists(jsonFilePath))
+            if (File.Exists(ReserveScheduleFile))
             {
-                string jsonData = File.ReadAllText(jsonFilePath);
+                string jsonData = File.ReadAllText(ReserveScheduleFile);
                 List<TeacherData> teachers = JsonConvert.DeserializeObject<List<TeacherData>>(jsonData);
 
                 if (teachers != null)

@@ -11,6 +11,7 @@ namespace Teachers__Schedule_Management.Forms
 {
     public partial class Record_Form : Form
     {
+        private static readonly string ReserveScheduleFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "schedule_Reserve_Data.json");
         public Record_Form()
         {
             InitializeComponent();
@@ -23,14 +24,13 @@ namespace Teachers__Schedule_Management.Forms
 
         private void LoadTeacherRecords()
         {
-            string jsonFilePath = "schedule_Reserve_Data.json";
 
-            if (!File.Exists(jsonFilePath))
+            if (!File.Exists(ReserveScheduleFile))
             {
                 return;
             }
 
-            string jsonData = File.ReadAllText(jsonFilePath);
+            string jsonData = File.ReadAllText(ReserveScheduleFile);
             List<TeacherData> teachers = JsonConvert.DeserializeObject<List<TeacherData>>(jsonData);
 
             if (teachers == null)

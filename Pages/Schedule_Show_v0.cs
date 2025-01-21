@@ -17,6 +17,7 @@ namespace Teachers__Schedule_Management.NewFolder1
     public partial class Schedule_Show_v0 : UserControl
     {
         private Label[] dayLabels;
+        private static readonly string ReserveScheduleFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "schedule_Reserve_Data.json");
 
         public Schedule_Show_v0()
         {
@@ -90,11 +91,10 @@ namespace Teachers__Schedule_Management.NewFolder1
 
         private void UpdateButtonColors()
         {
-            string jsonFilePath = "schedule_Reserve_Data.json";
 
-            if (File.Exists(jsonFilePath))
+            if (File.Exists(ReserveScheduleFile))
             {
-                string jsonData = File.ReadAllText(jsonFilePath);
+                string jsonData = File.ReadAllText(ReserveScheduleFile);
                 List<TeacherData> teachers = JsonConvert.DeserializeObject<List<TeacherData>>(jsonData);
 
                 if (teachers != null)

@@ -14,6 +14,7 @@ namespace Teachers__Schedule_Management.User_Control
 {
     public partial class Schedule_Edit_Delete_v0 : UserControl
     {
+        private static readonly string MainScheduleFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scheduleData.json");
         public Schedule_Edit_Delete_v0()
         {
             InitializeComponent();
@@ -80,9 +81,9 @@ namespace Teachers__Schedule_Management.User_Control
             Select_comboBox.Items.Clear();
 
             // Load all the Teachers names in the ComboBox from json file
-            if (File.Exists("scheduleData.json"))
+            if (File.Exists(MainScheduleFile))
             {
-                string json = File.ReadAllText("scheduleData.json");
+                string json = File.ReadAllText(MainScheduleFile);
                 var scheduleList = JsonConvert.DeserializeObject<List<dynamic>>(json);
                 if(scheduleList == null)
                 {
@@ -117,9 +118,9 @@ namespace Teachers__Schedule_Management.User_Control
 
             var selectedTeacher = Select_comboBox.SelectedItem.ToString();
 
-            if (File.Exists("scheduleData.json"))
+            if (File.Exists(MainScheduleFile))
             {
-                string json = File.ReadAllText("scheduleData.json");
+                string json = File.ReadAllText(MainScheduleFile);
                 var scheduleList = JsonConvert.DeserializeObject<List<dynamic>>(json);
 
                 var teacherSchedule = scheduleList.FirstOrDefault(schedule => schedule.TeacherName == selectedTeacher);
@@ -207,9 +208,9 @@ namespace Teachers__Schedule_Management.User_Control
 
             var selectedTeacher = Select_comboBox.SelectedItem.ToString();
 
-            if (File.Exists("scheduleData.json"))
+            if (File.Exists(MainScheduleFile))
             {
-                string json = File.ReadAllText("scheduleData.json");
+                string json = File.ReadAllText(MainScheduleFile);
                 var scheduleList = JsonConvert.DeserializeObject<List<dynamic>>(json);
 
                 var teacherSchedule = scheduleList.FirstOrDefault(schedule => schedule.TeacherName == selectedTeacher);
@@ -255,7 +256,7 @@ namespace Teachers__Schedule_Management.User_Control
 
                     // Save the updated schedule back to the JSON file
                     string updatedJson = JsonConvert.SerializeObject(scheduleList, Formatting.Indented);
-                    File.WriteAllText("scheduleData.json", updatedJson);
+                    File.WriteAllText(MainScheduleFile, updatedJson);
 
                     MessageBox.Show("Schedule updated successfully.");
                 }
@@ -272,9 +273,9 @@ namespace Teachers__Schedule_Management.User_Control
 
             var selectedTeacher = Select_comboBox.SelectedItem.ToString();
 
-            if (File.Exists("scheduleData.json"))
+            if (File.Exists(MainScheduleFile))
             {
-                string json = File.ReadAllText("scheduleData.json");
+                string json = File.ReadAllText(MainScheduleFile);
                 var scheduleList = JsonConvert.DeserializeObject<List<dynamic>>(json);
 
                 var teacherSchedule = scheduleList.FirstOrDefault(schedule => schedule.TeacherName == selectedTeacher);
@@ -286,7 +287,7 @@ namespace Teachers__Schedule_Management.User_Control
 
                     // Save the updated schedule list back to the JSON file
                     string updatedJson = JsonConvert.SerializeObject(scheduleList, Formatting.Indented);
-                    File.WriteAllText("scheduleData.json", updatedJson);
+                    File.WriteAllText(MainScheduleFile, updatedJson);
 
                     // Clear the selection and reset button colors
                     Select_comboBox.SelectedItem = null;

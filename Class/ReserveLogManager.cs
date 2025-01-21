@@ -10,7 +10,7 @@ namespace Teachers__Schedule_Management.Class
 {
     public class ReserveLogManager
     {
-        private readonly string _logFilePath = "log_Reserve.json";
+        private static readonly string _logFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log_Reserve.json");
         private readonly string[] _daysOfWeek = { "sunday", "monday", "tuesday", "wednesday", "thursday" };
 
         public void CreateReserveLog(List<TeacherData> reserveTeachers)
