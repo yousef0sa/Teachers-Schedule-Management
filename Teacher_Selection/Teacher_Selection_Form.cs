@@ -160,17 +160,17 @@ namespace Teachers__Schedule_Management.User_Control
 
             if (repeatCount > 0)
             {
-                teacherData.Teacher_Status_Notification_Text = $"Status: Repeat {repeatCount}";
+                teacherData.Teacher_Status_Notification_Text = $"{repeatCount} الحالة: مكرر";
                 teacherData.Teacher_Status_Notification_Style = ReaLTaiizor.Controls.FoxNotification.Styles.Yellow;
             }
             else if (totalPoints >= 24)
             {
-                teacherData.Teacher_Status_Notification_Text = "Status: Limit Reached";
+                teacherData.Teacher_Status_Notification_Text = "الحالة: النِّصَاب";
                 teacherData.Teacher_Status_Notification_Style = ReaLTaiizor.Controls.FoxNotification.Styles.Red;
             }
             else
             {
-                teacherData.Teacher_Status_Notification_Text = "Status: Excellent";
+                teacherData.Teacher_Status_Notification_Text = "الحالة: ممتاز";
                 teacherData.Teacher_Status_Notification_Style = ReaLTaiizor.Controls.FoxNotification.Styles.Green;
             }
         }

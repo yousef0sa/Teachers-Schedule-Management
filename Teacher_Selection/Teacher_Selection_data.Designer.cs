@@ -256,7 +256,7 @@
             this.Reserve_button.Size = new System.Drawing.Size(114, 91);
             this.Reserve_button.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
             this.Reserve_button.TabIndex = 13;
-            this.Reserve_button.Text = "Reserve";
+            this.Reserve_button.Text = "احتياط";
             this.Reserve_button.TextColor = System.Drawing.Color.White;
             this.Reserve_button.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             this.Reserve_button.Click += new System.EventHandler(this.Reserve_button_Click);
@@ -292,7 +292,7 @@
             this.Teacher_Status_Notification.Size = new System.Drawing.Size(170, 40);
             this.Teacher_Status_Notification.Style = ReaLTaiizor.Controls.FoxNotification.Styles.Green;
             this.Teacher_Status_Notification.TabIndex = 10;
-            this.Teacher_Status_Notification.Text = "Status: Excellent";
+            this.Teacher_Status_Notification.Text = "الحالة: ممتاز";
             this.Teacher_Status_Notification.YellowBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(248)))), ((int)(((byte)(225)))));
             this.Teacher_Status_Notification.YellowBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.Teacher_Status_Notification.YellowTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(131)))), ((int)(((byte)(88)))));
