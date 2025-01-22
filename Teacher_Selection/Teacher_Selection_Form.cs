@@ -165,7 +165,7 @@ namespace Teachers__Schedule_Management.User_Control
             }
             else if (totalPoints >= 24)
             {
-                teacherData.Teacher_Status_Notification_Text = "الحالة: النِّصَاب";
+                teacherData.Teacher_Status_Notification_Text = "الحالة: منضغط";
                 teacherData.Teacher_Status_Notification_Style = ReaLTaiizor.Controls.FoxNotification.Styles.Red;
             }
             else
